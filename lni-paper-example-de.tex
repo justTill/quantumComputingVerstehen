@@ -41,29 +41,58 @@
 %%% Mehrere Autoren werden durch \and voneinander getrennt.
 %%% Die Fußnote enthält die Adresse sowie eine E-Mail-Adresse.
 %%% Das optionale Argument (sofern angegeben) wird für die Kopfzeile verwendet.
-\title[Ein Kurztitel]{Ein sehr langer Titel über mehrere Zeilen mit sehr vielen Worten und noch mehr Buchstaben}
+\title[Ein Kurztitel]{Quanten Computing verstehen: Grovers Algorithmus}
 %%%\subtitle{Untertitel / Subtitle} % falls benötigt
-\author[Vorname1 Nachname1 \and Vorname2 Nachname2]
-{Vorname1 Nachname1\footnote{Universität, Abteilung, Straße, Postleitzahl Ort, Land \email{emailaddress@author1}} \and
- Vorname2 Nachname2\footnote{University, Department, Address, Country \email{emailaddress@author2}}}
+\author[Sabrina Cielas \and Till Pilarczyk]
+{Sabrina Cielas\footnote{Hochschule Düsseldorf, Gebäude 4, Münsterstraße 156, 40476 Düsseldorf, Deutschland \email{sabrina.cielas@study.hs-duesseldorf.de}} \and
+ Till Pilarczyk\footnote{Hochschule Düsseldorf, Gebäude 4, Münsterstraße 156, 40476 Düsseldorf, Deutschland \email{till.pilarczyk@study.hs-duesseldorf.de}}}
 \startpage{11} % Beginn der Seitenzählung für diesen Beitrag
-\editor{Herausgeber et al.}    % Namen der Herausgeber
-\booktitle{Name-der-Konferenz} % Name des Tagungsband; optional Kurztitel
-\yearofpublication{2017}
+\editor{Hochschule Düsseldorf}    % Namen der Herausgeber
+\booktitle{Modul: QCV} % Name des Tagungsband; optional Kurztitel
+%\yearofpublication{2017}
 %%%\lnidoi{18.18420/provided-by-editor-02} % Falls bekannt
 \maketitle
 
 \begin{abstract}
-Die \LaTeX-Klasse \texttt{lni} setzt die Layout-Vorgaben für Beiträge in LNI Konferenzbänden um.
-Dieses Dokument beschreibt ihre Verwendung und ist ein Beispiel für die entsprechende Darstellung.
-Der Abstract ist ein kurzer Überblick über die Arbeit der zwischen 70 und 150 Wörtern lang sein und das Wichtigste enthalten sollte.
-Die Formatierung erfolgt automatisch innerhalb des abstract-Bereichs.
+
 \end{abstract}
 
 \begin{keywords}
-LNI Guidelines \and \LaTeX Vorlage
+Quantencomputer \and Quantum Computing \and Grovers-Algorithmen
 \end{keywords}
 
+\section{Begriffserklärung (nur wenn Platz ist)}
+Der Text bezieht sich auf die Quelle... Kapitel 6. \\
+ Es Wird vorausgesetzt, das bekannt ist, was die folgende Begrifflichkeiten sind
+\begin{itemize}
+	\item Superposition
+	\item Amplitude
+	\item Messen
+	\item Quantenorakel
+	\item Hadamar Gatter
+	Am besten Schmitt Fragen?
+\end{itemize}
+Falls wird noch Platz haben können wir diese begriffe noch erklären
+\section{Einleitung}
+\input{einleitung}
+
+\section{Grovers-Algorithmus}
+\input{groversAlgorithmen}
+
+\section{Geometrische Veranschaulichung}
+\input{geometrischeVeranschaulichung}
+\label{sec:geoVer}
+
+\section{Varianten der Quantensuche}
+\input{variantenDerQuantensuche}
+
+\section{Anwendungen des Grovers Algorithmus}
+\input{anwendungenDesGroversAlgorithmus}
+
+\section{Folgen für die Fähigkeit von Quantencomputern }
+\input{folgenFuerQuantencomputern}
+
+\begin{comment}
 \section{Verwendung}
 Die GI gibt unter \url{http://www.gi-ev.de/LNI} Vorgaben für die Formatierung von Dokumenten in der LNI Reihe.
 Für \LaTeX-Dokumente werden diese durch die Dokumentenklasse \texttt{lni} realisiert.
@@ -165,7 +194,7 @@ und
   2&=7-5\\
   3&=2-1
 \end{align}
-
+\end{comment}
 %% \bibliography{lni-paper-example-de.tex} ist hier nicht erlaubt: biblatex erwartet dies bei der Preambel
 %% Starten Sie "biber paper", um eine Biliographie zu erzeugen.
 \printbibliography

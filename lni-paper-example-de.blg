@@ -1,0 +1,17 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'lni-paper-example-de.blg'
+[100] biber-darwin:322> INFO - === Mon Aug  1, 2022, 10:46:34
+[118] Biber.pm:415> INFO - Reading 'lni-paper-example-de.bcf'
+[242] Biber.pm:943> INFO - Found 9 citekeys in bib section 0
+[258] Biber.pm:4256> INFO - Processing section 0
+[259] Utils.pm:75> INFO - Globbing data source 'lni-paper-example-de.bib'
+[259] Utils.pm:91> INFO - Globbed data source 'lni-paper-example-de.bib' to lni-paper-example-de.bib
+[270] Biber.pm:4455> INFO - Looking for bibtex format file 'lni-paper-example-de.bib' for section 0
+[272] bibtex.pm:1653> INFO - LaTeX decoding ...
+[286] bibtex.pm:1471> INFO - Found BibTeX data source 'lni-paper-example-de.bib'
+[367] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[367] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[367] Biber.pm:4084> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[367] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[380] bbl.pm:652> INFO - Writing 'lni-paper-example-de.bbl' with encoding 'UTF-8'
+[385] bbl.pm:755> INFO - Output to lni-paper-example-de.bbl
