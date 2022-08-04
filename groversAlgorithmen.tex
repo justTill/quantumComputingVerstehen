@@ -116,7 +116,7 @@ Es wurde gezeigt, das die Matrix $\mathbf{D_N}$ in ein Produkt aus Matrizen zerl
 Um ein Gatter zu entwickeln zu können, welches die Transformation $\mathbf{R_N}$ umsetzt, muss sich angeschaut werden wie sich $\mathbf{R_N}$ bei einer Multiplikation von Matrizen auswirkt. Alle Werte einer Matrix die mit $\mathbf{R_N}$ multipliziert wird bleiben gleich. Lediglich die erste Zeile oder Spalte wird negiert. Dies ist davon abhängig, ob die Matrix $\mathbf{R_N}$ auf der Linken oder Rechten Seite der Multiplikation ist. In ersten Zeile der Abbildung \ref{fig:DLokal} ist die Negation der ersten Spalte zu sehen.
 \\
 Multipliziert man $\mathbf{R_N}$ mit Amplituden, bedeutet dies, dass lediglich die Amplitude des ersten Elementes ($\mathbf{|0...0\rangle}$)negiert wird.
-Falls $\mathbf{R_4}$, dann sähe das Gatter wie in Abbildung \ref{fig:Rgatter} aus.
+Falls $\mathbf{R_4}$ wäre, dann sähe das Gatter wie in Abbildung \ref{fig:Rgatter} aus.
  \begin{figure}[hbtp]
  	\centering
  	\includegraphics[width=.8\textwidth]{figures/rgatter.png}
@@ -126,16 +126,24 @@ Falls $\mathbf{R_4}$, dann sähe das Gatter wie in Abbildung \ref{fig:Rgatter} a
 \\
 Es folgt eine weitere Beispielrechnung, um zu verdeutlichen, das dieses Gatter die Transformation $\mathbf{R_4}$ ausführt.
 \subsubsection{Beispielrechnung}
+ABBILDUNG
  In den Abbildungen () werden die Werte der QBits $\mathbf{|00\rangle}$ und wie diese sich durch die einzelnen Gatter verändern dargestellt.
- 
  Die Pauli X Gatter invertieren den Wert eines QBits. Aus $\mathbf{|0\rangle}$ wird $\mathbf{|1\rangle}$ und andersrum. Das erste Bit wird bis zum letzten Pauli-X Gatter nicht mehr verändert. Es wird ausschließlich genutzt um zu schauen, ob das CNOT aktiviert wird. Das zweite QBit wird durch das erste Hadamar Gatter, in folgende Superposition $\mathbf{\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$. Da das erste QBit den Wert $\mathbf{|1\rangle}$ hat wird das zweite QBit durch das CNOT negiert - $\mathbf{-\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$. Anschließend durch läuft das zweite Bit wieder ein Hadamar Gatter, das QBit hat anschließend folgenden Wert: $\mathbf{-|1\rangle}$.
  Zum Schluss werden beide Bits ($\mathbf{|1\rangle}$ und $\mathbf{-|1\rangle}$) durch die Pauli-X Gatter invertiert und wir erhalten das gewünschte Ergebnis von $\mathbf{-|00\rangle}$.
   \\
   \\
-Die QBits $\mathbf{|10\rangle \text{ und }|11\rangle}$, werden nicht durchgerechnet, da sich dort das CNOT Gatter nicht aktiviert und durch die doppelten Ausführung der unitären Hadamar- und Pauli-X -Gatter die QBits nicht verändert werden.
+  ABBILDUNG
+
+ Die Abbildung () zeigt die QBits $\mathbf{|01\rangle}$  und wie diese von den Gattern verändert werden. Die ersten Pauli-X Gatter invertieren abermals die QBits, diese haben nun den Wert $\mathbf{|10\rangle}$. Das erste QBit wird bis auf von dem letzten Pauli-X Gatter nicht verändert und nur zur Aktivierung der Operation CNOT zuhilfe genommen. Das zweite QBit wird durch das Hadamar Gatter in die Superpostion $\mathbf{\frac{1}{\sqrt 2}(|0\rangle + |1\rangle)}$ gebracht. Diese verändert sich auch nicht durch die CNOT Operation. Nach der CNOT Operation wird das QBit durch das zweite Hadamar Gatter wieder in den Basiszustand $\mathbf{|0\rangle}$ gebracht. Zuletzt durchlaufen die beiden QBits ein Pauli-X Gatter welches die QBits von den Basiszustände $\mathbf{|10\rangle}$ in den erwarteten Zustand $\mathbf{|01\rangle}$ überführt. Die QBits haben nach dem durchlaufen des Gatters die selben Zustände wie vorher.
+  \\ 
+  \\
+Bei den QBits $\mathbf{|10\rangle \text{ und }|11\rangle}$, wird die CNOT Operation nicht ausgeführt, da das erste QBit in den Basiszustand $\mathbf{|0\rangle}$ überführt werden. Die QBits werden durch die doppelte Ausführung der Gatter ebenfalls nicht verändert.
+\\
+\\
+Daran kann gesehen werden, dass die Gatter die gewünschte Operation $\mathbf{R_4}$ ausführen.
 
 \subsection{Graphische Darstellung des Grover Algorithmus}
-
+In der Abbildung() ist wie in der Abbildung() der Grover Algorithmus nochmals Graphisch dargestellt. Dieses mal enthält die Abbildung alle verschiedenen Gatter, die die QBits durchlaufen.
 
 
 
