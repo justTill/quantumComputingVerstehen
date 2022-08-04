@@ -126,9 +126,15 @@ Falls $\mathbf{R_4}$, dann sähe das Gatter wie in Abbildung \ref{fig:Rgatter} a
 \\
 Es folgt eine weitere Beispielrechnung, um zu verdeutlichen, das dieses Gatter die Transformation $\mathbf{R_4}$ ausführt.
 \subsubsection{Beispielrechnung}
+ In den Abbildungen () werden die Werte der QBits $\mathbf{|00\rangle}$ und wie diese sich durch die einzelnen Gatter verändern dargestellt.
+ 
+ Die Pauli X Gatter invertieren den Wert eines QBits. Aus $\mathbf{|0\rangle}$ wird $\mathbf{|1\rangle}$ und andersrum. Das erste Bit wird bis zum letzten Pauli-X Gatter nicht mehr verändert. Es wird ausschließlich genutzt um zu schauen, ob das CNOT aktiviert wird. Das zweite QBit wird durch das erste Hadamar Gatter, in folgende Superposition $\mathbf{\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$. Da das erste QBit den Wert $\mathbf{|1\rangle}$ hat wird das zweite QBit durch das CNOT negiert - $\mathbf{-\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$. Anschließend durch läuft das zweite Bit wieder ein Hadamar Gatter, das QBit hat anschließend folgenden Wert: $\mathbf{-|1\rangle}$.
+ Zum Schluss werden beide Bits ($\mathbf{|1\rangle}$ und $\mathbf{-|1\rangle}$) durch die Pauli-X Gatter invertiert und wir erhalten das gewünschte Ergebnis von $\mathbf{-|00\rangle}$.
+  \\
+  \\
+Die QBits $\mathbf{|10\rangle \text{ und }|11\rangle}$, werden nicht durchgerechnet, da sich dort das CNOT Gatter nicht aktiviert und durch die doppelten Ausführung der unitären Hadamar- und Pauli-X -Gatter die QBits nicht verändert werden.
 
-
-
+\subsection{Graphische Darstellung des Grover Algorithmus}
 
 
 

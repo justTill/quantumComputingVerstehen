@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.5)  1 AUG 2022 18:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.5)  4 AUG 2022 18:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1349,16 +1349,20 @@ File: figures/rgatter.png Graphic file (type png)
 <use figures/rgatter.png>
 Package pdftex.def Info: figures/rgatter.png  used on input line 122.
 (pdftex.def)             Requested size: 286.80501pt x 93.42894pt.
- [15 <./figures/spiegelung.png>]) (./geometrischeVeranschaulichung.tex)
-[16 <./figures/householderLokal_1.png> <./figures/householderLokal_2.png> <./fi
-gures/rgatter.png>] (./variantenDerQuantensuche.tex)
+ [15 <./figures/spiegelung.png>] [16 <./figures/householderLokal_1.png> <./figu
+res/householderLokal_2.png> <./figures/rgatter.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 131--136
+
+ []
+
+) (./geometrischeVeranschaulichung.tex) (./variantenDerQuantensuche.tex)
 (./anwendungenDesGroversAlgorithmus.tex) (./folgenFuerQuantencomputern.tex)
+[17]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
 (Font)              scaled to size 10.0pt on input line 200.
 LaTeX Font Info:    Trying to load font information for T1+newtxtt on input lin
 e 200.
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/newtxtt/t1newtxtt.fd
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/newtxtt/t1newtxtt.fd
 File: t1newtxtt.fd 2020/02/15 Font definitions for T1/newtxtt.
 )
 LaTeX Font Info:    Font shape `T1/newtxtt/m/n' will be
@@ -1366,7 +1370,7 @@ LaTeX Font Info:    Font shape `T1/newtxtt/m/n' will be
 
 No complaints by nag.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 202.
-[17]
+[18]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 202.
  (./lni-paper-example-de.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 24.
@@ -1378,13 +1382,13 @@ Package logreq Info: Writing requests to 'lni-paper-example-de.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25155 strings out of 480608
- 433013 string characters out of 5903631
- 1255102 words of memory out of 5000000
+ 25167 strings out of 480608
+ 433240 string characters out of 5903631
+ 1256102 words of memory out of 5000000
  40319 multiletter control sequences out of 15000+600000
- 619708 words of font info for 221 fonts, out of 8000000 for 9000
+ 620138 words of font info for 226 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 65i,12n,102p,858b,3749s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,13n,102p,858b,3749s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtxtt/txttBqec.enc}{/us
 r/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}{/usr/l
 ocal/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/t
@@ -1398,10 +1402,10 @@ e1/public/newtx/txmiaX.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publ
 ic/newtx/txsys.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx
 /ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmr.pfb
 ></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on lni-paper-example-de.pdf (7 pages, 360398 bytes).
+Output written on lni-paper-example-de.pdf (8 pages, 362593 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
+ 154 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  73771 words of extra memory for PDF output out of 74296 (max. 10000000)
 
