@@ -2181,6 +2181,23 @@
     <bcf:datasource type="file" datatype="bibtex">lni-paper-example-de.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">Ho17</bcf:citekey>
+    <bcf:citekey order="2">Ho17</bcf:citekey>
+    <bcf:citekey order="3">Ho17</bcf:citekey>
+    <bcf:citekey order="4">Ho17</bcf:citekey>
+    <bcf:citekey order="5">Ho17</bcf:citekey>
+    <bcf:citekey order="6">Ho17</bcf:citekey>
+    <bcf:citekey order="7">Ho17</bcf:citekey>
+    <bcf:citekey order="8">Ho17</bcf:citekey>
+    <bcf:citekey order="9">Ho17</bcf:citekey>
+    <bcf:citekey order="10">Ho17</bcf:citekey>
+    <bcf:citekey order="11">Ho17</bcf:citekey>
+    <bcf:citekey order="12">Ho17</bcf:citekey>
+    <bcf:citekey order="13">Ho17</bcf:citekey>
+    <bcf:citekey order="14">Ho17</bcf:citekey>
+    <bcf:citekey order="15">Ho17</bcf:citekey>
+    <bcf:citekey order="16">Ho17</bcf:citekey>
+    <bcf:citekey order="17">Ho17</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

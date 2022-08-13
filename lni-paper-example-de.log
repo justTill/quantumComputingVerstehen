@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.5)  7 AUG 2022 19:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.5)  13 AUG 2022 21:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1283,95 +1283,104 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 7.3pt on input line 1.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 5.5pt on input line 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--9
+
+ []
+
 LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
-(Font)              scaled to size 10.0pt on input line 8.
- [11{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              scaled to size 10.0pt on input line 9.
+[11{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 9.
+(Font)              scaled to size 10.0pt on input line 10.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 15.
-<figures/amplitudenveraenderung.png, id=24, 476.78125pt x 206.7725pt>
+(Font)              scaled to size 10.0pt on input line 16.
+<figures/amplitudenveraenderung.png, id=25, 476.78125pt x 206.7725pt>
 File: figures/amplitudenveraenderung.png Graphic file (type png)
 <use figures/amplitudenveraenderung.png>
 Package pdftex.def Info: figures/amplitudenveraenderung.png  used on input line
- 31.
+ 32.
 (pdftex.def)             Requested size: 286.80501pt x 124.38942pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--47
+Underfull \hbox (badness 10000) in paragraph at lines 25--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--47
+Underfull \hbox (badness 10000) in paragraph at lines 25--47
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--47
+Underfull \hbox (badness 10000) in paragraph at lines 25--47
 
  []
 
 [12] [13 <./figures/amplitudenveraenderung.png>]
-<figures/algoInformell.png, id=50, 517.935pt x 145.54375pt>
+
+LaTeX Warning: Reference `fig:algotInformellt' on page 14 undefined on input li
+ne 49.
+
+<figures/algoInformell.png, id=51, 517.935pt x 145.54375pt>
 File: figures/algoInformell.png Graphic file (type png)
 <use figures/algoInformell.png>
-Package pdftex.def Info: figures/algoInformell.png  used on input line 51.
+Package pdftex.def Info: figures/algoInformell.png  used on input line 52.
 (pdftex.def)             Requested size: 358.5049pt x 100.7473pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 70.
- [14 <./figures/algoInformell.png>]
+(Font)              scaled to size 5.5pt on input line 71.
+[14 <./figures/algoInformell.png>]
 <figures/spiegelung.png, id=65, 359.3425pt x 104.39pt>
 File: figures/spiegelung.png Graphic file (type png)
 <use figures/spiegelung.png>
-Package pdftex.def Info: figures/spiegelung.png  used on input line 91.
+Package pdftex.def Info: figures/spiegelung.png  used on input line 92.
 (pdftex.def)             Requested size: 286.80501pt x 83.32413pt.
 <figures/householderLokal_1.png, id=66, 509.905pt x 143.53625pt>
 File: figures/householderLokal_1.png Graphic file (type png)
 <use figures/householderLokal_1.png>
-Package pdftex.def Info: figures/householderLokal_1.png  used on input line 111
+Package pdftex.def Info: figures/householderLokal_1.png  used on input line 112
 .
 (pdftex.def)             Requested size: 286.80501pt x 80.73894pt.
 <figures/householderLokal_2.png, id=67, 509.905pt x 143.53625pt>
 File: figures/householderLokal_2.png Graphic file (type png)
 <use figures/householderLokal_2.png>
-Package pdftex.def Info: figures/householderLokal_2.png  used on input line 112
+Package pdftex.def Info: figures/householderLokal_2.png  used on input line 113
 .
 (pdftex.def)             Requested size: 286.80501pt x 80.73894pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 113.
+(Font)              scaled to size 9.0pt on input line 114.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 9.0pt on input line 113.
+(Font)              scaled to size 9.0pt on input line 114.
 <figures/rgatter.png, id=71, 308.15125pt x 100.375pt>
 File: figures/rgatter.png Graphic file (type png)
 <use figures/rgatter.png>
-Package pdftex.def Info: figures/rgatter.png  used on input line 127.
+Package pdftex.def Info: figures/rgatter.png  used on input line 128.
 (pdftex.def)             Requested size: 286.80501pt x 93.42894pt.
  [15 <./figures/spiegelung.png>] [16 <./figures/householderLokal_1.png> <./figu
 res/householderLokal_2.png> <./figures/rgatter.png>]
 <figures/RGatter00.png, id=89, 618.31pt x 216.81pt>
 File: figures/RGatter00.png Graphic file (type png)
 <use figures/RGatter00.png>
-Package pdftex.def Info: figures/RGatter00.png  used on input line 136.
+Package pdftex.def Info: figures/RGatter00.png  used on input line 137.
 (pdftex.def)             Requested size: 286.80501pt x 100.57079pt.
 <figures/RGatter01.png, id=91, 618.31pt x 216.81pt>
 File: figures/RGatter01.png Graphic file (type png)
 <use figures/RGatter01.png>
-Package pdftex.def Info: figures/RGatter01.png  used on input line 147.
+Package pdftex.def Info: figures/RGatter01.png  used on input line 148.
 (pdftex.def)             Requested size: 286.80501pt x 100.57079pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--159
+Underfull \hbox (badness 10000) in paragraph at lines 141--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--159
+Underfull \hbox (badness 10000) in paragraph at lines 141--160
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--159
+Underfull \hbox (badness 10000) in paragraph at lines 141--160
 
  []
 
@@ -1379,7 +1388,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--159
 <figures/algoFormell.png, id=105, 654.445pt x 216.81pt>
 File: figures/algoFormell.png Graphic file (type png)
 <use figures/algoFormell.png>
-Package pdftex.def Info: figures/algoFormell.png  used on input line 164.
+Package pdftex.def Info: figures/algoFormell.png  used on input line 165.
 (pdftex.def)             Requested size: 358.5049pt x 118.76947pt.
 )
 (./geometrischeVeranschaulichung.tex
@@ -1400,9 +1409,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--86
 
 (./variantenDerQuantensuche.tex) (./anwendungenDesGroversAlgorithmus.tex)
 (./folgenFuerQuantencomputern.tex)
-
-LaTeX Warning: Empty bibliography on input line 201.
-
 No complaints by nag.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
 [20]
@@ -1412,18 +1418,22 @@ Package cleveref Info: loaded `ngerman' language definitions on input line 24.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 203.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'lni-paper-example-de.run.xml'.
 \openout1 = `lni-paper-example-de.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 24936 strings out of 480608
- 428320 string characters out of 5903631
- 1256444 words of memory out of 5000000
- 40080 multiletter control sequences out of 15000+600000
- 616464 words of font info for 228 fonts, out of 8000000 for 9000
+ 25135 strings out of 480608
+ 432297 string characters out of 5903631
+ 1256541 words of memory out of 5000000
+ 40280 multiletter control sequences out of 15000+600000
+ 616378 words of font info for 227 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 65i,13n,102p,1034b,3749s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,13n,102p,1047b,3749s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/us
 r/local/texlive/2020/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/loc
 al/texlive/2020/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/tex
@@ -1435,10 +1445,10 @@ ts/type1/public/newtx/txsys.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
 /public/newtx/ztmb.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/n
 ewtx/ztmr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/newtx/ztmr
 i.pfb>
-Output written on lni-paper-example-de.pdf (10 pages, 511400 bytes).
+Output written on lni-paper-example-de.pdf (10 pages, 512205 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
  71743 words of extra memory for PDF output out of 74296 (max. 10000000)
 
