@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber lni-paper-example-de"] 1660666900 "lni-paper-example-de.bcf" "lni-paper-example-de.bbl" "lni-paper-example-de" 1660666909
-  "lni-paper-example-de.bcf" 1660666909 107833 b309d7366823f29da918551de00698d4 "pdflatex"
+["biber lni-paper-example-de"] 1660684698 "lni-paper-example-de.bcf" "lni-paper-example-de.bbl" "lni-paper-example-de" 1660684707
+  "lni-paper-example-de.bcf" 1660684707 107833 b309d7366823f29da918551de00698d4 "pdflatex"
   "lni-paper-example-de.bib" 1660573070 2284 1a3d61cbe3f1f59457f29441bdf49b31 ""
   (generated)
   "lni-paper-example-de.bbl"
   "lni-paper-example-de.blg"
-["pdflatex"] 1660666906 "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" "lni-paper-example-de.pdf" "lni-paper-example-de" 1660666909
-  "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" 1660666907 7456 e24920f041021d84d679f3044b9d278c ""
+["pdflatex"] 1660684705 "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" "lni-paper-example-de.pdf" "lni-paper-example-de" 1660684707
+  "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" 1660684698 7032 7b9987694eb153c2770b676c3ed02924 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1640468671 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1529098226 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -218,8 +218,8 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649103879 2826444 0841c62176cf598a9dbc78af8fc035e2 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "anwendungenDesGroversAlgorithmus.tex" 1660136331 49 36be68cab34e2244f158d037969bcbee ""
-  "aufgabenstellung.tex" 1660665751 1520 55a6177cce5d4aad6d9d046dc61d33ac ""
-  "einleitung.tex" 1660665264 1675 d18dd26e36f6615126a2b5ef0ccd61f3 ""
+  "aufgabenstellung.tex" 1660676126 1526 91d277c4d6e5486d1efeeefddd070d78 ""
+  "einleitung.tex" 1660676062 1684 9a8339a1b762009ef52f49597b2c3d1b ""
   "figures/RGatter00.png" 1660136331 72565 36027bdab61b164a13495105f206d096 ""
   "figures/RGatter01.png" 1660136331 73131 31dba6f70e7a0c2a3c028c164e0c1962 ""
   "figures/algoFormell.png" 1660136331 66933 0502652ea1f2e4dff8f1dc05dff4387e ""
@@ -233,11 +233,11 @@
   "folgenFuerQuantencomputern.tex" 1660136331 67 3374ed027f9f5ae06a53c09bd430e1a1 ""
   "geometrischeVeranschaulichung.tex" 1660573070 3825 4a9ced53768a9a51bba2b21e44655ce4 ""
   "groversAlgorithmen.tex" 1660573070 14558 bf33435ceaa111dfa800abb8e27cb042 ""
-  "lni-paper-example-de.aux" 1660666909 9502 a6ffad8fec8dbf18cf612be2ea058b2e "pdflatex"
-  "lni-paper-example-de.bbl" 1660666902 1588 8f294a3cb8679b350d3fd77a1fa4eb72 "biber lni-paper-example-de"
-  "lni-paper-example-de.run.xml" 1660666909 2652 0fd00847b5e2af5e38264c037ad8e292 "pdflatex"
-  "lni-paper-example-de.tex" 1660666907 7456 e24920f041021d84d679f3044b9d278c ""
-  "variantenDerQuantensuche.tex" 1660666900 7825 7473df1dccb3b03913ca63412c73e567 ""
+  "lni-paper-example-de.aux" 1660684707 9365 66b6fd01009b988d98b4bca31b0b2e00 "pdflatex"
+  "lni-paper-example-de.bbl" 1660684700 1588 8f294a3cb8679b350d3fd77a1fa4eb72 "biber lni-paper-example-de"
+  "lni-paper-example-de.run.xml" 1660684707 2652 0fd00847b5e2af5e38264c037ad8e292 "pdflatex"
+  "lni-paper-example-de.tex" 1660684698 7032 7b9987694eb153c2770b676c3ed02924 ""
+  "variantenDerQuantensuche.tex" 1660677039 8650 afe7743744ab0e7bd7d348e3b19f7321 ""
   (generated)
   "lni-paper-example-de.aux"
   "lni-paper-example-de.bcf"

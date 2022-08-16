@@ -1,15 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'lni-paper-example-de.blg'
-[64] biber-darwin:340> INFO - === Tue Aug 16, 2022, 18:21:41
-[77] Biber.pm:418> INFO - Reading 'lni-paper-example-de.bcf'
-[166] Biber.pm:972> INFO - Found 1 citekeys in bib section 0
-[181] Biber.pm:4383> INFO - Processing section 0
-[191] Biber.pm:4574> INFO - Looking for bibtex file 'lni-paper-example-de.bib' for section 0
-[192] bibtex.pm:1713> INFO - LaTeX decoding ...
-[202] bibtex.pm:1518> INFO - Found BibTeX data source 'lni-paper-example-de.bib'
-[236] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[236] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[236] Biber.pm:4203> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
-[236] Biber.pm:4209> INFO - No sort tailoring available for locale 'de-DE'
-[237] bbl.pm:654> INFO - Writing 'lni-paper-example-de.bbl' with encoding 'UTF-8'
-[238] bbl.pm:757> INFO - Output to lni-paper-example-de.bbl
+[68] biber-darwin:340> INFO - === Tue Aug 16, 2022, 23:18:20
+[83] Biber.pm:418> INFO - Reading 'lni-paper-example-de.bcf'
+[170] Biber.pm:972> INFO - Found 1 citekeys in bib section 0
+[185] Biber.pm:4383> INFO - Processing section 0
+[196] Biber.pm:4574> INFO - Looking for bibtex file 'lni-paper-example-de.bib' for section 0
+[198] bibtex.pm:1713> INFO - LaTeX decoding ...
+[208] bibtex.pm:1518> INFO - Found BibTeX data source 'lni-paper-example-de.bib'
+[243] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[243] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[243] Biber.pm:4203> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[243] Biber.pm:4209> INFO - No sort tailoring available for locale 'de-DE'
+[244] bbl.pm:654> INFO - Writing 'lni-paper-example-de.bbl' with encoding 'UTF-8'
+[245] bbl.pm:757> INFO - Output to lni-paper-example-de.bbl
