@@ -1,17 +1,15 @@
-[0] Config.pm:304> INFO - This is Biber 2.14
-[0] Config.pm:307> INFO - Logfile is 'lni-paper-example-de.blg'
-[117] biber-darwin:322> INFO - === Sat Aug 13, 2022, 21:15:26
-[139] Biber.pm:415> INFO - Reading 'lni-paper-example-de.bcf'
-[268] Biber.pm:943> INFO - Found 1 citekeys in bib section 0
-[285] Biber.pm:4256> INFO - Processing section 0
-[285] Utils.pm:75> INFO - Globbing data source 'lni-paper-example-de.bib'
-[286] Utils.pm:91> INFO - Globbed data source 'lni-paper-example-de.bib' to lni-paper-example-de.bib
-[297] Biber.pm:4455> INFO - Looking for bibtex format file 'lni-paper-example-de.bib' for section 0
-[298] bibtex.pm:1653> INFO - LaTeX decoding ...
-[314] bibtex.pm:1471> INFO - Found BibTeX data source 'lni-paper-example-de.bib'
-[344] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[345] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[345] Biber.pm:4084> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
-[345] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
-[347] bbl.pm:652> INFO - Writing 'lni-paper-example-de.bbl' with encoding 'UTF-8'
-[348] bbl.pm:755> INFO - Output to lni-paper-example-de.bbl
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'lni-paper-example-de.blg'
+[64] biber-darwin:340> INFO - === Tue Aug 16, 2022, 18:21:41
+[77] Biber.pm:418> INFO - Reading 'lni-paper-example-de.bcf'
+[166] Biber.pm:972> INFO - Found 1 citekeys in bib section 0
+[181] Biber.pm:4383> INFO - Processing section 0
+[191] Biber.pm:4574> INFO - Looking for bibtex file 'lni-paper-example-de.bib' for section 0
+[192] bibtex.pm:1713> INFO - LaTeX decoding ...
+[202] bibtex.pm:1518> INFO - Found BibTeX data source 'lni-paper-example-de.bib'
+[236] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[236] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[236] Biber.pm:4203> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[236] Biber.pm:4209> INFO - No sort tailoring available for locale 'de-DE'
+[237] bbl.pm:654> INFO - Writing 'lni-paper-example-de.bbl' with encoding 'UTF-8'
+[238] bbl.pm:757> INFO - Output to lni-paper-example-de.bbl
