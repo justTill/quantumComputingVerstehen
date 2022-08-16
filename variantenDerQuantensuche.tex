@@ -29,7 +29,7 @@ R ← -HnRNHnVfR
 
 Aus der Veröffentlichung von Boyer, Brassard, Høyer und Tapp geht hervor, dass bei Anwendung dieses Algorithmus nach einem Durchlauf eine Lösung mit einer Wahrscheinlichkeit von 25\% gefunden wurde. Trotz der zufällig gewählten Anzahl von Iterationen beträgt die Laufzeit für diesen Algorithmus O.
 Boyer, Brassard, HoMITSTRICHyer und Tapp beschreiben eine weitere Modifizierung des Algorithmus, die es erlaubt die Laufzeit auf O zu senken. 
-Dazu wird vor Beginn des Algorithmus ein SIGMA element aus {1,…, 4/3} gewählt und m=1 initialisiert. Die Anzahl der Iterationen r wird dann im 2. Schritt nicht mehr aus {1, …, sqrt(N)} gewählt, sondern aus {0, …, m}. Wertet f(x) im 5. Schritt dann zu 0 aus, wird m mit dem Faktor SIGMA multipliziert, sodass bei dem nächsten Durchlauf des Algorithmus im 2. Schritt r aus {0, …, SIGMAm} gewählt wird. Im schlechtesten Fall wird so lange keine Lösung gefunden, dass SIGMA x m > sqrt(N) gilt. Dann wird im 2. Schritt r wieder zufällig aus {0,  …, sqrt(N)} gewählt, bis der Algorithmus terminiert. [QUELLE]
+Dazu wird vor Beginn des Algorithmus ein SIGMA element aus \{1,…, 4/3\} gewählt und m=1 initialisiert. Die Anzahl der Iterationen r wird dann im 2. Schritt nicht mehr aus \{1, …, sqrt(N)\} gewählt, sondern aus {0, …, m}. Wertet f(x) im 5. Schritt dann zu 0 aus, wird m mit dem Faktor SIGMA multipliziert, sodass bei dem nächsten Durchlauf des Algorithmus im 2. Schritt r aus \{0, …, SIGMAm\} gewählt wird. Im schlechtesten Fall wird so lange keine Lösung gefunden, dass SIGMA x m > sqrt(N) gilt. Dann wird im 2. Schritt r wieder zufällig aus \{0,  …, sqrt(N)\} gewählt, bis der Algorithmus terminiert. [QUELLE]
 
 
 \subsection{Suche nach dem Minimum}
