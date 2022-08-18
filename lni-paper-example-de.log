@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  16 AUG 2022 23:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  18 AUG 2022 23:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1145,10 +1145,32 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 65.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 65.
-(./einleitung.tex) (./aufgabenstellung.tex)
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/12'
+(microtype)             (new value: 12.0pt) on input line 65.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/8.8'
+(microtype)             (new value: 8.8pt) on input line 65.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/6.6'
+(microtype)             (new value: 6.6pt) on input line 65.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.8pt on input line 65.
+(./einleitung.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 1--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--67
+
+ []
+
+(./aufgabenstellung.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 1--70
+
+ []
+
 LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
 (Font)              scaled to size 10.0pt on input line 70.
- [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 ] (./groversAlgorithmen.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--9
@@ -1264,15 +1286,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--77
  []
 
 [10 <./figures/zweiEbenen.png>] (./variantenDerQuantensuche.tex
-LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 13.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
-File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
-)
-LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 13.
- [11] [12] [13]) (./anwendungenDesGroversAlgorithmus.tex) (./folgenFuerQuantencomputern.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--26
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
+
+ []
+
+[12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 109--115
+
+ []
+
+) (./anwendungenDesGroversAlgorithmus.tex) (./folgenFuerQuantencomputern.tex) [14]
 No complaints by nag.
-[14] (./lni-paper-example-de.aux
+[15] (./lni-paper-example-de.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 22.
 )
 
@@ -1283,18 +1318,18 @@ Package logreq Info: Writing requests to 'lni-paper-example-de.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30887 strings out of 478268
- 540023 string characters out of 5846348
- 1414632 words of memory out of 5000000
- 48250 multiletter control sequences out of 15000+600000
- 556904 words of font info for 253 fonts, out of 8000000 for 9000
+ 30986 strings out of 478268
+ 541959 string characters out of 5846348
+ 1415632 words of memory out of 5000000
+ 48274 multiletter control sequences out of 15000+600000
+ 577464 words of font info for 322 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 85i,12n,131p,1103b,4039s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on lni-paper-example-de.pdf (14 pages, 500443 bytes).
+ 85i,13n,131p,1103b,4039s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on lni-paper-example-de.pdf (15 pages, 503499 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 171 compressed objects within 2 object streams
- 64 named destinations out of 1000 (max. 500000)
- 73791 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 245 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 86079 words of extra memory for PDF output out of 89155 (max. 10000000)
 
