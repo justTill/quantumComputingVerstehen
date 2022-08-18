@@ -33,7 +33,7 @@ Um die Amplitude von $\mathbf{\hat x}$ zu negieren, wird ein Hilfsbit und das Qu
 	\caption{Amplitudenveränderung \\ Quelle: \cite[S. 141]{Ho17}}
 	\label{fig:changeAmplitude}
 \end{figure}
-Die negative Amplitude von $\mathbf{\hat x}$ hat keinen Einfluss auf das Messen, um mit einer erhöhten Wahrscheinlichkeit das Element $\mathbf{\hat x}$ nach dem Messen zu erhalten wird Schritt zwei benötigt.
+Die negative Amplitude von $\mathbf{\hat x}$ hat keinen Einfluss auf das Messen. Schritt 2 wird benötigt, um mit einer erhöhten Wahrscheinlichkeit das Element $\mathbf{\hat x}$ nach dem Messen zu erhalten.
 \\\\
 \textbf{Spiegelung am Mittelwert} \\
 \label{sec:spiegelnAmMittelwert} 
@@ -46,18 +46,18 @@ Sei $\mathbf{N = 8}$, so würde die Amplitude von $\mathbf{ \hat x}$ nach der er
 Ein erneutes Spiegeln würde die Amplituden von $\mathbf{\hat{x}}$ im Gegensatz zu Erwartung wieder verringern und alle anderen erhöhen. Es ist daher besonders wichtig, dass nicht zu viele Grover Iterationen ausgeführt werden. Wie die Genaue Anzahl an Iterationen berechnet werden kann folgt im Abschnitt \ref{sec:geoVer}
 
 \subsubsection{Graphische Darstellung des Grover Algorithmus}
-Der Grover Algorithmus sieht nach dem bisherigen Erklärungen wie in Abbildung \ref{fig:algotInformellt} aus.
+In Abbildung \ref{fig:algoInformell} ist der Quantenschaltkreis des Grover Algorithmus nach bisherigen Erklärungsstand zu sehen.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/algoInformell.png}
 	\caption{Graphische Darstellung des Grover Algorithmus \\ Quelle: Anlehnung an \cite[S. 146]{Ho17}}
 	\label{fig:algoInformell}
 \end{figure}
-Alle QBits werden mithilfe der Hadamar Gatter in Superpositionen gebacht. Alles danach bis zum Messen Symbol am Ende der Abbildung ist die Grover Iteration.
+Alle QBits werden mithilfe der Hadamar Gatter in Superpositionen gebacht. Alles danach bis zum Messen am Ende der Abbildung ist die Grover Iteration.
 Der Äußere Kasten steht in der Abbildung für das mehrfache Wiederholen der Grover-Iteration. $\mathbf{V_f}$ steht für das Quantenorakel, jedoch wird hier das Hilfsbit nicht mit eingezeichnet. Anschließend folgt die Spiegelung am Mittelwert. Wie diese genau mithilfe von Gattern umgesetzt wird, folgt im nächsten Abschnitt (\ref{sec:realiserung}). Nach dem ausführen der Grover Iterationen werden die QBits gemessen.
 \subsection{Realisierung der Spiegelung am Mittelwert}
 \label{sec:realiserung}
-Die Abbildung $\mathbf{\alpha \rightarrow 2 \times m - \alpha}$ lässt sich mithilfe einer Matrixberechnung umsetzten.
+Die Abbildung $\mathbf{\alpha \rightarrow 2 \times m - \alpha}$ lässt sich mithilfe folgender Matrixberechnung umsetzten.
 \begin{center}
 	$\mathbf{D_N \times 
 	\begin{pmatrix}
@@ -70,7 +70,9 @@ Die Abbildung $\mathbf{\alpha \rightarrow 2 \times m - \alpha}$ lässt sich mith
 			 \frac{2}{N} & \frac{2}{N} & \dots& -1+ \frac{2}{N} \\
 	\end{pmatrix}}$
 \end{center}
+Dies wird in Abschnitt \ref{seg:bspSpiegelungAmMittelwert} anhand einer Beispielrechnung verdeutlicht.
 \subsubsection{Beispielrechnung: Realisierung der Spiegelung am Mittelwert}
+\label{seg:bspSpiegelungAmMittelwert}
 Sei $\mathbf{N = 4}$ so ergibt sich folgende Rechnung:
 \begin{center}
  $\mathbf{D_4  \times \begin{pmatrix}
@@ -139,7 +141,7 @@ Es folgen weitere Beispielrechnungen, um zu verdeutlichen, dass der Quantenschal
 	\label{fig:Rgatter00}
 \end{figure}
  In den Abbildungen \ref{fig:Rgatter00} werden die Werte der QBits $\mathbf{|00\rangle}$ und wie diese sich durch die einzelnen Gatter verändern dargestellt.
- Die Pauli X-Gatter invertieren den Wert eines QBits. Aus $\mathbf{|0\rangle}$ wird $\mathbf{|1\rangle}$ und andersherum. Das erste Bit wird bis zum letzten Pauli-X Gatter nicht mehr verändert. Es wird ausschließlich genutzt um zu schauen, ob das CNOT aktiviert wird. Das zweite QBit wird durch das erste Hadamar Gatter, in folgende Superposition $\mathbf{\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$ gebracht. Da das erste QBit den Wert $\mathbf{|1\rangle}$ hat wird das zweite QBit durch das CNOT negiert, und hat den Wert: - $\mathbf{-\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$. Anschließend durch läuft das zweite Bit wieder ein Hadamar Gatter. Das QBit hat anschließend folgenden Wert: $\mathbf{-|1\rangle}$.
+ Die Pauli X-Gatter invertieren den Wert eines QBits. Aus $\mathbf{|0\rangle}$ wird $\mathbf{|1\rangle}$ und andersherum. Das erste Bit wird bis zum letzten Pauli-X Gatter nicht mehr verändert. Es wird ausschließlich genutzt um zu schauen, ob das CNOT aktiviert wird. Das zweite QBit wird durch das erste Hadamar Gatter, in folgende Superposition $\mathbf{\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$ gebracht. Da das erste QBit den Wert $\mathbf{|1\rangle}$ hat wird das zweite QBit durch das CNOT negiert, und hat den Wert: $\mathbf{-\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$. Anschließend durch läuft das zweite Bit wieder ein Hadamar Gatter. Das QBit hat anschließend folgenden Wert: $\mathbf{-|1\rangle}$.
  Zum Schluss werden beide Bits ($\mathbf{|1\rangle}$ und $\mathbf{-|1\rangle}$) durch die Pauli-X Gatter invertiert und wir erhalten das gewünschte und erwartete Ergebnis $\mathbf{-|00\rangle}$.
   \\
   \\
@@ -153,13 +155,13 @@ Es folgen weitere Beispielrechnungen, um zu verdeutlichen, dass der Quantenschal
  Die Abbildung \ref{fig:Rgatter01} zeigt die QBits $\mathbf{|01\rangle}$  und wie diese von den Gattern verändert werden. Die ersten Pauli-X Gatter invertieren abermals die QBits, diese haben nun den Wert $\mathbf{|10\rangle}$. Das erste QBit wird bis auf von dem letzten Pauli-X Gatter nicht verändert und nur zur Aktivierung der Operation CNOT zuhilfe genommen. Das zweite QBit wird durch das Hadamar Gatter in die Superpostion $\mathbf{\frac{1}{\sqrt 2}(|0\rangle + |1\rangle)}$ gebracht. Diese verändert sich nicht durch die CNOT Operation. Nach der CNOT Operation wird das QBit durch das zweite Hadamar Gatter wieder in den Basiszustand $\mathbf{|0\rangle}$ gebracht. Zuletzt durchlaufen die beiden QBits ein Pauli-X Gatter welches die QBits von den Basiszustände $\mathbf{|10\rangle}$ in den erwarteten Zustand $\mathbf{|01\rangle}$ überführt. Die QBits haben wie erwartet, nach dem durchlaufen des Quantenschaltkreises die selben Zustände wie vorher.
   \\ 
   \\
-Bei den QBits $\mathbf{|10\rangle \text{ und }|11\rangle}$, wird die CNOT Operation nicht ausgeführt, da das erste QBit in den Basiszustand $\mathbf{|0\rangle}$ überführt werden. Die QBits werden durch die doppelte Ausführung der Gatter ebenfalls nicht verändert. Aus diesen Gründen ist für diese beiden Beispiel keine Abbildung vorhanden.
+Bei den QBits $\mathbf{|10\rangle \text{ und }|11\rangle}$, wird die CNOT Operation nicht ausgeführt, da das erste QBit in den Basiszustand $\mathbf{|0\rangle}$ überführt werden. Die QBits werden durch die doppelte Ausführung der Gatter ebenfalls nicht verändert. Aus diesen Gründen ist für diese beiden Beispiele keine Abbildung vorhanden.
 \\
 \\
 An den Beispielen kann gesehen werden, dass der Quantenschaltkreis die gewünschte Operation $\mathbf{R_4}$ ausführen.
 
 \subsection{Graphische Darstellung des Grover Algorithmus}
-In der Abbildung \ref{fig:algoFormell} ist wie in der Abbildung \ref{fig:algoInformell} der Grover Algorithmus Graphisch dargestellt. Die Abbildung enthält alle Gatter die für den Grover Algorithmus benötigt werden. Hilfbits sind hier ebenfalls nicht eingezeichnet.
+In der Abbildung \ref{fig:algoFormell} ist wie in der Abbildung \ref{fig:algoInformell} der Quantenschaltkreis des Grover Algorithmus dargestellt. Die Abbildung enthält alle Gatter die für den Grover Algorithmus benötigt werden. Hilfbits sind in der Abbildung nicht eingezeichnet.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/algoFormell.png}
