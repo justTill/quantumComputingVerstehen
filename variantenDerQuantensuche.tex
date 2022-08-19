@@ -1,54 +1,142 @@
-Grovers Suchalgorithmus lässt sich so anpassen, dass er auch auf ähnliche verwandte Probleme angewandt werden kann. Bisher wurde für den Algorithmus vorausgesetzt, dass f genau ein Element xDACH auf 1 abbildet und die anderen Elemente auf 0. Diese Voraussetzung ist aber nicht bei jeder Suche gegeben. In den folgenden Abschnitten werden Suchalgorithmen betrachtet, bei denen es mehr als eine korrekte Lösung und unbekannt viele Lösungen gibt. Abschließend wird in Abschnitt x die Suche nach dem Minimum betrachtet. 
+Grovers Suchalgorithmus lässt sich so anpassen, dass er auch auf ähnliche verwandte Probleme angewandt werden kann.
+Bisher wurde für den Algorithmus vorausgesetzt, dass $\mathbf{f}$ genau ein Element $\mathbf{\hat x}$ auf $\mathbf{1}$ abbildet und die anderen Elemente auf $\mathbf{0}$. 
+Diese Voraussetzung ist aber nicht bei jeder Suche gegeben. In den folgenden Abschnitten werden Suchalgorithmen betrachtet, bei denen es mehr als eine korrekte Lösung und unbekannt viele Lösungen gibt. 
+Abschließend wird in Abschnitt x die Suche nach dem Minimum betrachtet. 
 
 \subsection{Suche nach einer von mehreren Lösungen}
 
-Angenommen in der Menge der möglichen Lösungen N befindet sich nicht nur ein Element xDACH, welches f auf 1 abbildet, sondern mehrere. Bei der Suche mit einem klassischen Computer verringert sich die Anzahl der Auswertungen von f(x) entsprechend der Anzahl der vorhandenen Lösungen. So würde bei vier korrekten Lösungen in N nur noch ein Viertel der ursprünglichen Auswertungen zu erwarten sein.
+Angenommen in der Menge der möglichen Lösungen $\mathbf{N}$ befindet sich nicht nur ein Element $\mathbf{\hat x}$, welches $\mathbf{f}$ auf $\mathbf{1}$ abbildet, sondern mehrere. 
+Bei der Suche mit einem klassischen Computer verringert sich die Anzahl der Auswertungen von $\mathbf{f(x)}$ entsprechend der Anzahl der vorhandenen Lösungen. So würde bei vier korrekten Lösungen in $\mathbf{N}$ nur noch ein Viertel der ursprünglichen Auswertungen zu erwarten sein.
 Auch bei der Quantensuche verringert sich der Aufwand entsprechend, ohne eine große Modifizierung am Algorithmus vorzunehmen.
-Für die Suche nach einer von mehreren Lösungen ist wieder ein Orakel UVONf gegeben, wobei die Funktion f genau k Elemente xDACH1, … xDACHk auf 1 abbildet. k ist somit die bekannte Anzahl der Lösungen in N, mit N = $2^n$. Der Algorithmus besteht wieder aus den folgenden Schritten:
+Für die Suche nach einer von mehreren Lösungen ist wieder ein Orakel $\mathbf{U \textsubscript{f}}$ gegeben, wobei die Funktion $\mathbf{f}$ genau $\mathbf{k}$ Elemente $\mathbf{\hat x \textsubscript{1}}$, ..., $\mathbf{\hat x \textsubscript{k}}$ auf $\mathbf{1}$ abbildet. $\mathbf{k}$ ist somit die bekannte Anzahl der Lösungen in $\mathbf{N}$, mit $\mathbf{N = 2^n}$. 
+Der Algorithmus besteht wieder aus den folgenden Schritten:
+\begin{quote}
+    \begin{enumerate}
+        \item \textbf{Superpositionen aufbauen}
+        \\
+        Es wird die gleichverteilte Superposition aufgebaut, indem alle Qubits in die Superposition gebracht werden:
+        \\
+        \begin{equation}
+            R \leftarrow H\textsubscript{n} |0 ... 0\rangle 
+        \end{equation}
+        \item \textbf{Amplitudenveränderung durchführen}
+        \\
+        Grover-Iteration auf $\mathbf{R}$ anwenden und so die Amplitudenveränderungen durchführen. Die Grover-Iteration wird dabei $\mathbf{G(N,k)}$-mal ausgeführt.
+        \\
+        \begin{equation}
+            R \leftarrow -H\textsubscript{n} R\textsubscript{N} H\textsubscript{n} V\textsubscript{f} |x\rangle
+        \end{equation}
+        \item \textbf{Messen}
+        \\
+        Das Quantenregister $\mathbf{R}$ wird gemessen und die Ergebnisse ausgegeben.
+    \end{enumerate}
+\end{quote}
 
-1. Es wird die gleichverteilte Superposition aufgebaut, indem alle Qubits in die Superposition gebracht werden:
-R ← Hn 0…0  
-2. Grover-Iteration auf R anwenden und so die Amplitudenveränderungen durchführen. 
-R ← -HnENHnVf x
-Die Grover-Iteration wird dabei G(N,k)-mal ausgeführt
-3. Das Quantenregister R wird gemessen und die Ergebnisse ausgegeben.
-$ Der einzige Punkt, in dem sich dieser Algorithmus von dem ursprünglichen Grover-Algorithmus unterscheidet, ist im zweiten Schritt die Anzahl der Grover-Iteration. Im Regelfall wird die Grover-Iteration T= pi/4 x sqrt(N) durchgeführt. GN,k) ist jedoch definiert mit:
-G(N,k) \tilde{=} pi/4 sqrt(N/k)
-Damit reduziert die Anzahl der vorhandenen Lösungen in N die Anzahl der benötigten Grover-Iterationen. Für den Fall, dass k >= 3/4 N kann ein zufälliges Element x aus N gewählt und f(x) ausgewertet werden. Mit einer 75 prozentigen Wahrscheinlichkeit wird f(x) zu 1 auswerten.
-Laufzeit$
+Der einzige Punkt, in dem sich dieser Algorithmus von dem ursprünglichen Grover-Algorithmus unterscheidet, ist im 2. Schritt die Anzahl der Grover-Iteration. 
+Im Regelfall wird die Grover-Iteration $\mathbf{T = \frac{\pmb\pi}{4} \times \sqrt{N}}$ durchgeführt. $\mathbf{G(N,k)}$ ist jedoch definiert mit:
+\\
+\begin{equation}
+    {G(N,k) \thickapprox \frac{\pi}{4} \times \sqrt{\frac{N}{k}}}
+\end{equation}
+\\
+Damit reduziert die Anzahl der vorhandenen Lösungen in $\mathbf{N}$ die Anzahl der benötigten Grover-Iterationen. 
+Für den Fall, dass $\mathbf{k \geq \frac{3}{4} \times N}$ kann ein zufälliges Element $\mathbf{x}$ aus $\mathbf{N}$ gewählt und $\mathbf{f(x)}$ ausgewertet werden. 
+Mit einer 75 prozentigen Wahrscheinlichkeit wird $\mathbf{f(x) = 1}$ auswerten.
+\\
+LAUFZEIT
+
 \subsection{Suche nach unbekannt vielen Lösungen}
-Eine größere Herausforderung stellt die Suche dar, wenn im Vorhinein nicht bekannt ist, wie viele Lösungen in der durchsuchten Menge N vorhanden sind. Bisher wurde die Anzahl der Lösungen benötigt, um die Anzahl der Grover-Iterationen zu bestimmen, damit durch die Amplitudenveränderung mit großer Wahrscheinlichkeit das gesuchte Element gefunden wird. Ist die Anzahl der richtigen Elemente vorher nicht bekannt, so muss die Anzahl der Iterationen auf eine andere Weise bestimmt werden. Dazu wurde der Grover-Algorithmus von Boyer, Brassard, Høyer und Tapp weiterentwickelt und wird dementsprechend als G-BBHT-Suche bezeichnet.
-Wie bei der Suche nach einer von mehreren Lösungen ist ein Orakel Uf gegeben, mit der Funktion f, die genau k Elemente xDACH1, …, xDACHk auf 1 abbildet und die restlichen Elemente auf 0. N ist wieder gegeben durch N\=n\^2, allerdings ist dieses mal nicht bekannt wie groß k ist. Der angepasste Algorithmus läuft folgendermaßen ab\:
-1. Ein zufälliges Element x wird aus N ausgewählt. Wenn f(x) zu 1 auswertet wurde erfolgreich eins der gesuchten Elemente gefunden und es kann an dieser Stelle gestoppt werden. Hintergrund ist, dass k >= 3/4 N sein könnte und in diesem Fall mit großer Wahrscheinlichkeit auch ohne Iterationen ein korrektes Ergebnis erreicht werden kann. Wertet f(x) zu 0 aus, dann wird im 2. Schritt fortgefahren.
-2. Es wird ein zufälliger Wert r ausgewählt mit r Element aus 1, … , sqrt(N). Dieses r bestimmt die Anzahl der Iterationen in Schritt 4.
-3. Es wird die gleichverteilte Superposition aufgebaut, indem alle Qubits in die Superposition gebracht werden:
-R ← Hn 0…0
-4. Die Grover-Iteration wird r-mal auf R angewandt und so die Amplitudenveränderungen durchgeführt:
-R ← -HnRNHnVfR
-5. Das Quantenregister R wird messen und f(x) für das ausgegebene Ergebnis x ausgewertet. Wertet f(x) zu 1 aus, so wurde eins der gesuchten Elemente gefunden und es kann an dieser Stelle gestoppt werden. Wertet f(x) zu 0 aus, so wird wieder beim 1. Schritt begonnen.
+Eine größere Herausforderung stellt die Suche dar, wenn im Vorhinein nicht bekannt ist, wie viele Lösungen in der durchsuchten Menge $\mathbf{N}$ vorhanden sind. 
+Bisher wurde die Anzahl der Lösungen benötigt, um die Anzahl der Grover-Iterationen zu bestimmen, damit durch die Amplitudenveränderung mit großer Wahrscheinlichkeit das gesuchte Element gefunden wird. 
+Ist die Anzahl der richtigen Elemente vorher nicht bekannt, so muss die Anzahl der Iterationen auf eine andere Weise bestimmt werden. 
+Dazu wurde der Grover-Algorithmus von Boyer, Brassard, Høyer und Tapp weiterentwickelt und wird dementsprechend als G-BBHT-Suche bezeichnet.
+Wie bei der Suche nach einer von mehreren Lösungen ist ein Orakel $\mathbf{U \textsubscript{f}}$ gegeben, mit der Funktion $\mathbf{f}$, die genau $\mathbf{k}$ Elemente $\mathbf{U \textsubscript{f}}$ gegeben, wobei die Funktion $\mathbf{f}$ genau $\mathbf{k}$ Elemente $\mathbf{\hat x \textsubscript{1}}$, ..., $\mathbf{\hat x \textsubscript{k}}$ auf $\mathbf{1}$ abbildet und die restlichen Elemente auf $\mathbf{0}$. $\mathbf{N}$ ist wieder gegeben durch $\mathbf{N = n^2}$, allerdings ist dieses mal nicht bekannt wie groß $\mathbf{k}$ ist. Der angepasste Algorithmus läuft folgendermaßen ab:
+\begin{quote}
+    \begin{enumerate}
+        \item \textbf{Superpositionen aufbauen}
+        \\
+        Ein zufälliges Element $\mathbf{x}$ wird aus $\mathbf{N}$ ausgewählt. Wenn $\mathbf{f(x) = 1}$ auswertet wurde erfolgreich eins der gesuchten Elemente gefunden und es kann an dieser Stelle gestoppt werden. 
+        \\
+        Hintergrund ist, dass $\mathbf{k \geq \frac{3}{4} \times N}$ sein könnte und in diesem Fall mit großer Wahrscheinlichkeit auch ohne Iterationen ein korrektes Ergebnis erreicht werden kann. Wertet $\mathbf{f(x) = 0}$ aus, dann wird im 2. Schritt fortgefahren.
+        \item \textbf{Superpositionen aufbauen}
+        \\
+        Es wird ein zufälliger Wert $\mathbf{r}$ ausgewählt mit $\mathbf{r \in \{ 1, ..., \sqrt{N} \}}$. Dieses $\mathbf{r}$ bestimmt die Anzahl der Iterationen im 4. Schritt.
+        \item \textbf{Superpositionen aufbauen}
+        \\
+        Es wird die gleichverteilte Superposition aufgebaut, indem alle Qubits in die Superposition gebracht werden:
+        \begin{equation}
+            R \leftarrow H\textsubscript{n} |0 ... 0\rangle 
+        \end{equation}
+        \item \textbf{Amplitudenveränderung durchführen}
+        \\
+        Die Grover-Iteration wird $\mathbf{r}$-mal auf $\mathbf{R}$ angewandt und so die Amplitudenveränderungen durchgeführt:
+        \begin{equation}
+            R \leftarrow -H\textsubscript{n} R\textsubscript{N} H\textsubscript{n} V\textsubscript{f} |x\rangle
+        \end{equation}
+        \item \textbf{Messen}
+        \\
+        Das Quantenregister $\mathbf{R}$ wird messen und $\mathbf{f(x)}$ für das ausgegebene Ergebnis $\mathbf{x}$ ausgewertet. Wertet $\mathbf{f(x) = 1}$ aus, so wurde eins der gesuchten Elemente gefunden und es kann an dieser Stelle gestoppt werden. Wertet $\mathbf{f(x) = 0}$ aus, so wird wieder beim 1. Schritt begonnen.
+    \end{enumerate}
+\end{quote}
 
-Aus der Veröffentlichung von Boyer, Brassard, Høyer und Tapp geht hervor, dass bei Anwendung dieses Algorithmus nach einem Durchlauf eine Lösung mit einer Wahrscheinlichkeit von 25\% gefunden wurde. Trotz der zufällig gewählten Anzahl von Iterationen beträgt die Laufzeit für diesen Algorithmus O.
-Boyer, Brassard, HoMITSTRICHyer und Tapp beschreiben eine weitere Modifizierung des Algorithmus, die es erlaubt die Laufzeit auf O zu senken. 
-Dazu wird vor Beginn des Algorithmus ein SIGMA element aus \{1,…, 4/3\} gewählt und m=1 initialisiert. Die Anzahl der Iterationen r wird dann im 2. Schritt nicht mehr aus \{1, …, sqrt(N)\} gewählt, sondern aus {0, …, m}. Wertet f(x) im 5. Schritt dann zu 0 aus, wird m mit dem Faktor SIGMA multipliziert, sodass bei dem nächsten Durchlauf des Algorithmus im 2. Schritt r aus \{0, …, SIGMAm\} gewählt wird. Im schlechtesten Fall wird so lange keine Lösung gefunden, dass SIGMA x m > sqrt(N) gilt. Dann wird im 2. Schritt r wieder zufällig aus \{0,  …, sqrt(N)\} gewählt, bis der Algorithmus terminiert. [QUELLE]
+Aus der Veröffentlichung von Boyer, Brassard, Høyer und Tapp geht hervor, dass bei Anwendung dieses Algorithmus nach einem Durchlauf eine Lösung mit einer Wahrscheinlichkeit von 25\% gefunden wurde. 
+Trotz der zufällig gewählten Anzahl von Iterationen beträgt die Laufzeit für diesen Algorithmus LAUFZEIT.
+Boyer, Brassard, Høyer und Tapp beschreiben eine weitere Modifizierung des Algorithmus, die es erlaubt die Laufzeit auf O LAUFZEIT zu senken. 
+Dazu wird vor Beginn des Algorithmus ein $\mathbf{\pmb\lambda \in \{1, ..., \frac{4}{3} \} }$ gewählt und $\mathbf{m = 1}$ initialisiert. Die Anzahl der Iterationen $\mathbf{r}$ wird dann im 2. Schritt nicht mehr aus $\mathbf{\{1, ..., \sqrt{N}\}}$ gewählt, sondern aus $\mathbf{\{0, ..., m\}}$. 
+Wertet $\mathbf{f(x)}$ im 5. Schritt dann zu $\mathbf{0}$ aus, wird $\mathbf{m}$ mit dem Faktor $\mathbf{\pmb\lambda}$ multipliziert, sodass bei dem nächsten Durchlauf des Algorithmus im 2. Schritt $\mathbf{e}$ aus $\mathbf{\{0, ..., \pmb\lambda \times m\}}$  gewählt wird. 
+Im schlechtesten Fall wird so lange keine Lösung gefunden, dass $\mathbf{\pmb\lambda \times m > \sqrt{N}}$ gilt. Dann wird im 2. Schritt $\mathbf{r}$ wieder zufällig aus $\mathbf{\{0, ..., \sqrt{N}\}}$ gewählt, bis der Algorithmus terminiert. [QUELLE]
 
 
 \subsection{Suche nach dem Minimum}
-Bei den bisherigen Suchen wurde nur eine lokale Eigenschaft der Elemente berücksichtigt: handelt es sich bei dem aktuellen Element um jenes, welches ich suche? Vollkommen unabhängig von den anderen Elementen, die sich in N befinden. Bei der Suche nach dem Minimum ist jedoch eine globale Eigenschaft ausschlaggebend: Ist dieses Element kleiner, als alle anderen Elemente aus dem Feld? 
+Bei den bisherigen Suchen wurde nur eine lokale Eigenschaft der Elemente berücksichtigt: handelt es sich bei dem aktuellen Element um jenes, welches gesucht wird. 
+Vollkommen unabhängig von den anderen Elementen, die sich in $\mathbf{N}$ befinden. Bei der Suche nach dem Minimum ist jedoch eine globale Eigenschaft ausschlaggebend: Ist dieses Element kleiner, als alle anderen Elemente aus dem Feld.
 Zur Lösung dieses Problems haben 1996 Dürr und Høyer basierend auf der G-BBHT-Suche weiter gearbeitet und den folgenden Algorithmus entwickelt: 
 
-Gegeben ist ein Orakel U, welches auf ein Feld T[0], …, T[N-1] zugreift. Dieses dient als Eingabe des Algorithmus, während das kleinste Element aus diesem Feld die Ausgabe des Algorithmus darstellt. N ist wieder gegeben durch $2^n$. Für das Orakel werden zwei Quantenregister x> und y> der Länge n, sowie ein Hilfsbit h> verwendet:
+Gegeben ist ein Orakel $\mathbf{U}$, welches auf ein Feld $\mathbf{T[0], ..., T[N-1]}$ zugreift. 
+Dieses dient als Eingabe des Algorithmus, während das kleinste Element aus diesem Feld die Ausgabe des Algorithmus darstellt. $\mathbf{N}$ ist wieder gegeben durch $\mathbf{2^n}$. 
+Für das Orakel werden zwei Quantenregister $\mathbf{|x\rangle}$ und $\mathbf{|y\rangle}$ der Länge $\mathbf{n}$, sowie ein Hilfsbit $\mathbf{|h\rangle}$ verwendet:
 
 U formel und f formel
+\begin{quote}
+    \begin{enumerate}
+        \item \textbf{Superpositionen aufbauen}
+        \\
+        Schrankenindex wählen
+        Zu Beginn wird ein Anfangswert $\mathbf{j}$ für den Schrankenindex zufällig aus $\mathbf{0 \leq j \leq N-1}$ ausgewählt. Dieser wird genutzt, um das Register $\mathbf{|y\rangle}$ zu initialisieren: 
+        \begin{equation}
+            |y\rangle \leftarrow |j\rangle
+        \end{equation}
+        \item \textbf{Superpositionen aufbauen}
+        \\
+        Nach Dürr und Høyer werden die folgenden Schritte wiederholt, bis die Gesamtlaufzeit $\mathbf{22,5 \times \sqrt{N} + 1,4 \times \pmb\log\textsubscript{2}N^2}$ überschreitet [QUELLE]. 
+        Anschließend wird mit Schritt 2. c) fortgefahren:
+        \\
+        \begin{enumerate}
+            \item \textbf{Superpositionen aufbauen}
+            \\
+            Es wird die gleichverteilte Superposition aufgebaut, indem alle Qubits in die Superposition gebracht werden:
+            \begin{equation}
+                |x\rangle \leftarrow H\textsubscript{n}|0 ... 0 \rangle
+            \end{equation}
+            \item \textbf{G-BBHT Suche}
+            \\
+            Auf dem Register $\mathbf{|x\rangle}$ wird mit dem Quantenorakel $\mathbf{U}$ die G-BBHT-Suche ausgeführt. 
+            So wird aus alles Elementen des Feldes eines zufällig ausgewählt, welches kleiner als der Schrankenindex $\mathbf{T[y]}$ ist.
+            \item \textbf{$\mathbf{|x\rangle}$ Messen}
+            \\
+            Das Quantenregister $\mathbf{|x\rangle}$ wird gemessen. 
+            Gilt für das daraus resultierende Ergebnis $\mathbf{i}$, dass $\mathbf{T[i] < T[y]}$, dann 
+            \begin{equation}
+                |y\rangle \leftarrow |i\rangle
+            \end{equation}
+        \end{enumerate}
 
-1. Schrankenindex wählen
-Zu Beginn wird ein Anfangswert j für den Schrankenindex zufällig aus 0 <= j <= N-1 ausgewählt. Dieser wird genutzt, um das Register y> zu initialisieren: y> <- j>
+        \item \textbf{$\mathbf{|y\rangle}$ Messen}
+        \\
+        Abschließend wird das Register $\mathbf{|y\rangle}$ gemessen und das ausgegebene Ergebnis ist das kleinste Element des Feldes.
+    \end{enumerate}
+\end{quote}
 
-2. Nach Dürr und HoMITSTRICHyer werden die folgenden Schritte wiederholt, bis die Gesamtlaufzeit 22.5 Sqrt[N] + 1.4 $Log[2,N]^2$ überschreitet [QUELLE]. Anschließend wird mit Schritt 2.3. fortgefahren:
-2.1. Es wird die gleichverteilte Superposition aufgebaut, indem alle Qubits in die Superposition gebracht werden:
-x> <- Hn 0…0  
-2.2. G-BBHT-Suche
-Auf dem Register x> wird mit dem Quantenorakel U die G-BBHT-Suche ausgeführt. So wird aus alles Elementen des Feldes eines zufällig ausgewählt, welches kleiner als der Schrankenindex T[y] ist.
-2.3 Das Quantenregister x> wird gemessen. Gilt für das daraus resultierende Ergebnis i T[i]<T[y], dann wird y> ← i>  gesetzt.
-3. Abschließend wird das Register y> gemessen und das ausgegebene Ergebnis ist das kleinste Element des Feldes.
-
-Der Algorithmus ist auf den ersten Blick, insbesondere durch die Verwendung der G-BBHT-Suche, recht abstrakt. Abbildung x soll das Verständnis  durch eine vereinfachte, grafische Darstellung des Vorgehens vereinfachen. Mit einer Laufzeit von O findet dieser Algorithmus mit über 50 \% das minimale Element des Feldes.
+Der Algorithmus ist auf den ersten Blick, insbesondere durch die Verwendung der G-BBHT-Suche, recht abstrakt. 
+Abbildung x soll das Verständnis durch eine vereinfachte, grafische Darstellung des Vorgehens vereinfachen. 
+Mit einer Laufzeit von O LAUFZEIT findet dieser Algorithmus mit über 50\% das minimale Element des Feldes.
