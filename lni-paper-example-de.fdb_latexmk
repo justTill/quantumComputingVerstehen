@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber lni-paper-example-de"] 1660892637 "lni-paper-example-de.bcf" "lni-paper-example-de.bbl" "lni-paper-example-de" 1660893924
-  "lni-paper-example-de.bcf" 1660893924 107833 b309d7366823f29da918551de00698d4 "pdflatex"
+["biber lni-paper-example-de"] 1660893997 "lni-paper-example-de.bcf" "lni-paper-example-de.bbl" "lni-paper-example-de" 1660894082
+  "lni-paper-example-de.bcf" 1660894082 107833 b309d7366823f29da918551de00698d4 "pdflatex"
   "lni-paper-example-de.bib" 1660573070 2284 1a3d61cbe3f1f59457f29441bdf49b31 ""
   (generated)
   "lni-paper-example-de.bbl"
   "lni-paper-example-de.blg"
-["pdflatex"] 1660893921 "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" "lni-paper-example-de.pdf" "lni-paper-example-de" 1660893924
+["pdflatex"] 1660894079 "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" "lni-paper-example-de.pdf" "lni-paper-example-de" 1660894082
   "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" 1660859480 7930 ef1f54b4a6e222a47228bcc10650d0d3 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1640468671 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
@@ -235,9 +235,9 @@
   "folgenFuerQuantencomputern.tex" 1660136331 67 3374ed027f9f5ae06a53c09bd430e1a1 ""
   "geometrischeVeranschaulichung.tex" 1660859480 3910 87fa40354b894bcb1e09f17a0029a366 ""
   "groversAlgorithmen.tex" 1660859480 14728 463947a357777d111af9747f902571dc ""
-  "lni-paper-example-de.aux" 1660893924 12347 5afe0b13eba0228746c8bd75f8133c1d "pdflatex"
+  "lni-paper-example-de.aux" 1660894082 12347 5afe0b13eba0228746c8bd75f8133c1d "pdflatex"
   "lni-paper-example-de.bbl" 0 -1 0 "biber lni-paper-example-de"
-  "lni-paper-example-de.run.xml" 1660893924 2652 119d29d2eb3f9532d21e7153e72212ec "pdflatex"
+  "lni-paper-example-de.run.xml" 1660894082 2652 119d29d2eb3f9532d21e7153e72212ec "pdflatex"
   "lni-paper-example-de.tex" 1660859480 7930 ef1f54b4a6e222a47228bcc10650d0d3 ""
   "variantenDerQuantensuche.tex" 1660893921 13032 b4aa0fb3e083027f28f483926a0077c3 ""
   (generated)
