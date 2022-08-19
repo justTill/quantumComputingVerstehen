@@ -49,7 +49,7 @@ LAUFZEIT
 Eine größere Herausforderung stellt die Suche dar, wenn im Vorhinein nicht bekannt ist, wie viele Lösungen in der durchsuchten Menge $\mathbf{N}$ vorhanden sind. 
 Bisher wurde die Anzahl der Lösungen benötigt, um die Anzahl der Grover-Iterationen zu bestimmen, damit durch die Amplitudenveränderung mit großer Wahrscheinlichkeit das gesuchte Element gefunden wird. 
 Ist die Anzahl der richtigen Elemente vorher nicht bekannt, so muss die Anzahl der Iterationen auf eine andere Weise bestimmt werden. 
-Dazu wurde der Grover-Algorithmus von Boyer, Brassard, Høyer und Tapp weiterentwickelt und wird dementsprechend als G-BBHT-Suche bezeichnet.
+Dazu wurde der Grover-Algorithmus von Boyer, Brassard, Høyer und Tapp weiterentwickelt und wird dementsprechend als G-BBHT Suche bezeichnet.
 Wie bei der Suche nach einer von mehreren Lösungen ist ein Orakel $\mathbf{U \textsubscript{f}}$ gegeben, mit der Funktion $\mathbf{f}$, die genau $\mathbf{k}$ Elemente $\mathbf{U \textsubscript{f}}$ gegeben, wobei die Funktion $\mathbf{f}$ genau $\mathbf{k}$ Elemente $\mathbf{\hat x \textsubscript{1}}$, ..., $\mathbf{\hat x \textsubscript{k}}$ auf $\mathbf{1}$ abbildet und die restlichen Elemente auf $\mathbf{0}$. $\mathbf{N}$ ist wieder gegeben durch $\mathbf{N = n^2}$, allerdings ist dieses mal nicht bekannt wie groß $\mathbf{k}$ ist. Der angepasste Algorithmus läuft folgendermaßen ab:
 \begin{quote}
     \begin{enumerate}
@@ -90,7 +90,7 @@ Im schlechtesten Fall wird so lange keine Lösung gefunden, dass $\mathbf{\pmb\l
 \subsection{Suche nach dem Minimum}
 Bei den bisherigen Suchen wurde nur eine lokale Eigenschaft der Elemente berücksichtigt: handelt es sich bei dem aktuellen Element um jenes, welches gesucht wird. 
 Vollkommen unabhängig von den anderen Elementen, die sich in $\mathbf{N}$ befinden. Bei der Suche nach dem Minimum ist jedoch eine globale Eigenschaft ausschlaggebend: Ist dieses Element kleiner, als alle anderen Elemente aus dem Feld.
-Zur Lösung dieses Problems haben 1996 Dürr und Høyer basierend auf der G-BBHT-Suche weiter gearbeitet und den folgenden Algorithmus entwickelt: 
+Zur Lösung dieses Problems haben 1996 Dürr und Høyer basierend auf der G-BBHT Suche weiter gearbeitet und den folgenden Algorithmus entwickelt: 
 
 Gegeben ist ein Orakel $\mathbf{U}$, welches auf ein Feld $\mathbf{T[0], ..., T[N-1]}$ zugreift. 
 Dieses dient als Eingabe des Algorithmus, während das kleinste Element aus diesem Feld die Ausgabe des Algorithmus darstellt. $\mathbf{N}$ ist wieder gegeben durch $\mathbf{2^n}$. 
@@ -120,8 +120,8 @@ U formel und f formel
             \end{equation}
             \item \textbf{G-BBHT Suche}
             \\
-            Auf dem Register $\mathbf{|x\rangle}$ wird mit dem Quantenorakel $\mathbf{U}$ die G-BBHT-Suche ausgeführt. 
-            So wird aus alles Elementen des Feldes eines zufällig ausgewählt, welches kleiner als der Schrankenindex $\mathbf{T[y]}$ ist.
+            Auf dem Register $\mathbf{|x\rangle}$ wird mit dem Quantenorakel $\mathbf{U}$ die G-BBHT Suche ausgeführt. 
+            So wird aus allen Elementen des Feldes eines zufällig ausgewählt, welches kleiner als der Schrankenindex $\mathbf{T[y]}$ ist.
             \item \textbf{$\mathbf{|x\rangle}$ Messen}
             \\
             Das Quantenregister $\mathbf{|x\rangle}$ wird gemessen. 
@@ -137,6 +137,22 @@ U formel und f formel
     \end{enumerate}
 \end{quote}
 
-Der Algorithmus ist auf den ersten Blick, insbesondere durch die Verwendung der G-BBHT-Suche, recht abstrakt. 
-Abbildung x soll das Verständnis durch eine vereinfachte, grafische Darstellung des Vorgehens vereinfachen. 
+Der Algorithmus ist auf den ersten Blick, insbesondere durch die Verwendung der G-BBHT Suche, recht abstrakt. 
+Abbildung \ref{fig:sucheMinimumVisualisierung} soll das Verständnis durch eine vereinfachte, grafische Darstellung des Vorgehens vereinfachen. 
+Der Datensatz in der Abbildung enthält hier beispielhaft die Werte $\mathbf{\{1, ..., 18\}}$, welche sich unsoriert im Feld befinden. Für die Verständlichkeit sind diese in der Abbildung jedoch aufsteigend sortiert.
+\\
+Zunächst wird im 1. Schritt der anfängliche Schrankenindex $\mathbf{j = 13}$ zufällig gewählt und das Register $\mathbf{|y\rangle \leftarrow |j\rangle}$ initialisiert. 
+Im 2. Schritt des Algorithmus würde das Quantenorakel $\mathbf{U}$ für alle Wert $\mathbf{< 13}$ zu $\mathbf{1}$ auswerten, für alle $\mathbf{< 13}$ zu $\mathbf{0}$.
+In Schritt 2. b) wird durch die G-BBHT Suche zufällig ein Element $\mathbf{T[i]}$ ausgewählt, welches kleiner als das aktuelle Element $\mathbf{T[y]}$ ist. 
+In Abbildung \ref{fig:sucheMinimumVisualisierung} handelt es sich dabei um das Element $\mathbf{T[9]}$.
+Da $\mathbf{T[9] < T[13]}$ und somit kleiner als der aktuelle Schrankenindex ist, wird dieses Element im Schritt 2. c) in das Register $\mathbf{|y\rangle}$ geschrieben.
+Der Algorithmus startet wieder am Beginn des 2. Schrittes. In Schritt 2. b) wird wieder ein zufälliges Element durch die G-BBHT Suche ausgewählt, überprüft ob dieses kleiner als der aktuelle Schrankenindex ist und anschließend in Schritt 2. c) in das Register $\mathbf{|y\rangle}$ geschrieben.
+Am Ende der Abbildung ist das Register $\mathbf{|y\rangle}$ mit dem Element $\mathbf{T[4]}$ gefüllt und der Algorithmus würde weitergeführt werden, bis das kleinste Element in dem Register $\mathbf{|y\rangle}$ steht.
+\begin{figure}[hbtp]
+	\centering
+	\fbox{\includegraphics[width=1\textwidth]{figures/suche-minimum-visualisierung.png}}
+	\caption{Visualisierung des 2. Schrittes der Suche nach dem Minimum \\ Quelle: Eigene Darstellung}
+	\label{fig:sucheMinimumVisualisierung}
+\end{figure} 
+
 Mit einer Laufzeit von O LAUFZEIT findet dieser Algorithmus mit über 50\% das minimale Element des Feldes.

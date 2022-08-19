@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  18 AUG 2022 23:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  19 AUG 2022 09:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1188,6 +1188,13 @@ File: figures/amplitudenveraenderung.png Graphic file (type png)
 Package pdftex.def Info: figures/amplitudenveraenderung.png  used on input line 32.
 (pdftex.def)             Requested size: 286.80501pt x 124.38942pt.
 
+
+LaTeX Warning: Citation 'Ho17' on page 3 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Ho17' on page 3 undefined on input line 33.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 25--47
 
  []
@@ -1208,7 +1215,14 @@ File: figures/algoInformell.png Graphic file (type png)
 <use figures/algoInformell.png>
 Package pdftex.def Info: figures/algoInformell.png  used on input line 52.
 (pdftex.def)             Requested size: 358.5049pt x 100.7473pt.
- [4 <./figures/amplitudenveraenderung.png>]
+
+
+LaTeX Warning: Citation 'Ho17' on page 4 undefined on input line 53.
+
+
+LaTeX Warning: Citation 'Ho17' on page 4 undefined on input line 53.
+
+[4 <./figures/amplitudenveraenderung.png>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 71.
  [5 <./figures/algoInformell.png>]
@@ -1217,6 +1231,13 @@ File: figures/spiegelung.png Graphic file (type png)
 <use figures/spiegelung.png>
 Package pdftex.def Info: figures/spiegelung.png  used on input line 94.
 (pdftex.def)             Requested size: 286.80501pt x 83.32413pt.
+
+
+LaTeX Warning: Citation 'Ho17' on page 6 undefined on input line 95.
+
+
+LaTeX Warning: Citation 'Ho17' on page 6 undefined on input line 95.
+
 <figures/householderLokal_1.png, id=72, 509.905pt x 143.53625pt>
 File: figures/householderLokal_1.png Graphic file (type png)
 <use figures/householderLokal_1.png>
@@ -1229,22 +1250,44 @@ Package pdftex.def Info: figures/householderLokal_2.png  used on input line 115.
 (pdftex.def)             Requested size: 286.80501pt x 80.73894pt.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/9'
 (microtype)             (new value: 9.0pt) on input line 116.
+
+LaTeX Warning: Citation 'Ho17' on page 6 undefined on input line 119.
+
 <figures/rgatter.png, id=77, 308.15125pt x 100.375pt>
 File: figures/rgatter.png Graphic file (type png)
 <use figures/rgatter.png>
 Package pdftex.def Info: figures/rgatter.png  used on input line 130.
 (pdftex.def)             Requested size: 286.80501pt x 93.42894pt.
- [6 <./figures/spiegelung.png>] [7 <./figures/householderLokal_1.png> <./figures/householderLokal_2.png> <./figures/rgatter.png>]
+
+LaTeX Warning: Citation 'Ho17' on page 6 undefined on input line 131.
+
+
+LaTeX Warning: Citation 'Ho17' on page 6 undefined on input line 131.
+
+[6 <./figures/spiegelung.png>] [7 <./figures/householderLokal_1.png> <./figures/householderLokal_2.png> <./figures/rgatter.png>]
 <figures/RGatter00.png, id=96, 618.31pt x 216.81pt>
 File: figures/RGatter00.png Graphic file (type png)
 <use figures/RGatter00.png>
 Package pdftex.def Info: figures/RGatter00.png  used on input line 139.
 (pdftex.def)             Requested size: 286.80501pt x 100.57079pt.
+
+
+LaTeX Warning: Citation 'Ho17' on page 8 undefined on input line 140.
+
+
+LaTeX Warning: Citation 'Ho17' on page 8 undefined on input line 140.
+
 <figures/RGatter01.png, id=98, 618.31pt x 216.81pt>
 File: figures/RGatter01.png Graphic file (type png)
 <use figures/RGatter01.png>
 Package pdftex.def Info: figures/RGatter01.png  used on input line 150.
 (pdftex.def)             Requested size: 286.80501pt x 100.57079pt.
+
+LaTeX Warning: Citation 'Ho17' on page 8 undefined on input line 151.
+
+
+LaTeX Warning: Citation 'Ho17' on page 8 undefined on input line 151.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 143--162
 
@@ -1266,12 +1309,26 @@ File: figures/algoFormell.png Graphic file (type png)
 <use figures/algoFormell.png>
 Package pdftex.def Info: figures/algoFormell.png  used on input line 167.
 (pdftex.def)             Requested size: 358.5049pt x 118.76947pt.
+
+
+LaTeX Warning: Citation 'Ho17' on page 9 undefined on input line 168.
+
+
+LaTeX Warning: Citation 'Ho17' on page 9 undefined on input line 168.
+
 ) (./geometrischeVeranschaulichung.tex
 <figures/zweiEbenen.png, id=113, 329.23pt x 273.02pt>
 File: figures/zweiEbenen.png Graphic file (type png)
 <use figures/zweiEbenen.png>
 Package pdftex.def Info: figures/zweiEbenen.png  used on input line 9.
 (pdftex.def)             Requested size: 215.10512pt x 178.38156pt.
+
+
+LaTeX Warning: Citation 'Ho17' on page 9 undefined on input line 10.
+
+
+LaTeX Warning: Citation 'Ho17' on page 9 undefined on input line 10.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--19
 
@@ -1302,28 +1359,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--115
 
  []
 
-[14]) (./anwendungenDesGroversAlgorithmus.tex) (./folgenFuerQuantencomputern.tex)
+[14]
+<figures/suche-minimum-visualisierung.png, id=175, 952.55875pt x 395.4775pt>
+File: figures/suche-minimum-visualisierung.png Graphic file (type png)
+<use figures/suche-minimum-visualisierung.png>
+Package pdftex.def Info: figures/suche-minimum-visualisierung.png  used on input line 153.
+(pdftex.def)             Requested size: 358.5049pt x 148.84076pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 153--154
+ [][] 
+ []
+
+) (./anwendungenDesGroversAlgorithmus.tex) (./folgenFuerQuantencomputern.tex)
+
+LaTeX Warning: Empty bibliography on input line 192.
+
 No complaints by nag.
-[15] (./lni-paper-example-de.aux
+[15] [16 <./figures/suche-minimum-visualisierung.png>] (./lni-paper-example-de.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 22.
 )
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                lni-paper-example-de
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'lni-paper-example-de.run.xml'.
 \openout1 = `lni-paper-example-de.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30993 strings out of 478268
- 542127 string characters out of 5846348
- 1412771 words of memory out of 5000000
- 48275 multiletter control sequences out of 15000+600000
- 577717 words of font info for 325 fonts, out of 8000000 for 9000
+ 30979 strings out of 478268
+ 541916 string characters out of 5846348
+ 1412897 words of memory out of 5000000
+ 48253 multiletter control sequences out of 15000+600000
+ 578033 words of font info for 329 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  85i,12n,131p,1103b,4039s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on lni-paper-example-de.pdf (15 pages, 504254 bytes).
+Output written on lni-paper-example-de.pdf (16 pages, 608248 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 73 named destinations out of 1000 (max. 500000)
- 86079 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 86084 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -1484,6 +1484,11 @@ INPUT variantenDerQuantensuche.tex
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/vf/public/newtx/ntxsym.vf
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm
+INPUT ./figures/suche-minimum-visualisierung.png
+INPUT ./figures/suche-minimum-visualisierung.png
+INPUT figures/suche-minimum-visualisierung.png
+INPUT ./figures/suche-minimum-visualisierung.png
+INPUT ./figures/suche-minimum-visualisierung.png
 INPUT ./anwendungenDesGroversAlgorithmus.tex
 INPUT ./anwendungenDesGroversAlgorithmus.tex
 INPUT ./anwendungenDesGroversAlgorithmus.tex
