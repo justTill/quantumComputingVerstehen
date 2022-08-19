@@ -1,3 +1,4 @@
+\begin{comment}
 Um den Algorithmus besser verstehen zu können werden die Rahmenbedingungenwie folgt formalisiert. Die Datenbank, besitzt $\mathbf{N}$ Elemente, wobei  $\mathbf{N = 2^n}$ entspricht. Den Datensätzen werden die Elementen $\mathbf{ \{ 0,1 \}^n}$ zugeordnet. Wenn $\mathbf{ n=2}$ entspräche, besäße die Datenbank folgende Elemente: $\mathbf{00,01,10,11}$. Das gesuchte Elemente wird als $\mathbf{\hat{x}}$ bezeichnet. Die Datenbank wird als eine Funktion $\mathbf{f \{ 0,1 \}^n  \rightarrow \{ 0,1 \}}$ mit folgender Eigenschaft umgesetzt: \\
 $\mathbf{f(x) = \begin{cases}1 \quad f\ddot{u}r \,
 		x = \hat x \\0 \quad sonst \end{cases} 
@@ -7,8 +8,12 @@ $\mathbf{f(x) = \begin{cases}1 \quad f\ddot{u}r \,
 Ist die Eingabe in die Funktion das gesuchte Element, so gibt diese $\mathbf{1}$ zurück, in allen anderen Fällen $\mathbf{0}$. 
 Mithilfe dieser Funktion wird das Quantenorakel. $\mathbf{U_f : | x,y \rangle \to |x,y \oplus f(x) \rangle}$ erstellt. Das Quantenorakel, negiert das Vorzeichen des gesuchten Elements. Diese Funktionsweise ist aus dem Deutsch-Jozsa Algorithmus bekannt
 
+
+\end{comment}
+Mithilfe der Rahmenbedingungen, die im vorherigen Abschnitt definiert worden sind, kann das benötigte Quantenorakel erstellt werden. Das Quantenorakel $\mathbf{U_f : | x,y \rangle \to |x,y \oplus f(x) \rangle}$ wird benötigt um dax Vorzeichen des gesuchten Elementes zu negieren. Dies passiert mithilfe des Hilfsbits $\mathbf{y}$. Die Funktionsweise des Quantenorakel ist aus dem Deutsch-Jozsa Algorithmus bekannt.
+
 \subsection{Prinzip}
-Der Grover Algrothmus lässt sich in drei Schritte aufteilen.
+Der Grover Algorithmus lässt sich in drei Schritte aufteilen.
 \begin{enumerate}
 	\item \textbf{Superpositionen aufbauen}
 	\\
@@ -22,11 +27,11 @@ Der Grover Algrothmus lässt sich in drei Schritte aufteilen.
 \end{enumerate}
 
 \subsubsection{Amplitudenveränderung}
-Die Amplitudenveränderung besteht aus zwei Schritten. Beim ersten Schritt wird das Vorzeichen der Amplitude von $\mathbf{\hat x}$ negiert. Im zweiten Schritt wird die negative Amplitude ausgenutzt um diese zu verstärken. Dies passiert in dem alle Amplituden am Mittelwert aller Amplituden gespiegelt werden. 
+Die Amplitudenveränderung besteht aus zwei Schritten. Beim ersten Schritt wird das Vorzeichen der Amplitude von $\mathbf{\hat x}$ negiert. Im zweiten Schritt wird die negative Amplitude ausgenutzt um diese zu verstärken. Dies passiert in dem die Amplituden am Mittelwert aller Amplituden gespiegelt werden. 
 \\ \\
 \textbf{Negieren der Amplitude}
  \\
-Um die Amplitude von $\mathbf{\hat x}$ zu negieren, wird ein Hilfsbit und das Quantenorakel benötigt. Das Hilfsbit wird in den Zustand $\mathbf{H|1\rangle}$ mithilfe eines Hadamar Gatters gebracht. Dadurch erhalten wird $\mathbf{|x\rangle \frac{1}{\sqrt 2}(|0\rangle - |1\rangle )}$. Anschließend wird das Quantenorakel angewendet und damit das Vorzeichen der Amplitude von $\mathbf{\hat{x}}$ negiert. Das Hilfsbit wird nun nicht mehr benötigt und kann in folgenden Berechnungen weggelassen werden. Dies lässt sich auch an der Abbildung \ref{fig:changeAmplitude} erkennen. Dort ist Anwendung des Quantenorakel und graphisch die Amplituden alle Elemente der Datenbank mit $\mathbf{N=4}$ vor und nach der Anwendung des Quantenorakels zu sehen.
+Um die Amplitude von $\mathbf{\hat x}$ zu negieren, wird ein Hilfsbit und das Quantenorakel benötigt. Das Hilfsbit wird in den Zustand $\mathbf{H|1\rangle}$ mithilfe eines Hadamar Gatters gebracht. Dadurch erhalten wir $\mathbf{|x\rangle \frac{1}{\sqrt 2}(|0\rangle - |1\rangle )}$. Anschließend wird das Quantenorakel angewendet und damit das Vorzeichen der Amplitude von $\mathbf{\hat{x}}$ negiert. Das Hilfsbit wird nun nicht mehr benötigt und kann in folgenden Berechnungen weggelassen werden. Dies lässt sich auch an der Abbildung \ref{fig:changeAmplitude} erkennen. Dort ist Anwendung des Quantenorakel und graphisch die Amplituden alle Elemente der Datenbank mit $\mathbf{N=4}$ vor und nach der Anwendung des Quantenorakels zu sehen.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=.8\textwidth]{figures/amplitudenveraenderung.png}
@@ -41,12 +46,12 @@ Die negative Amplitude von $\mathbf{\hat x}$ hat keinen Einfluss auf das Messen.
 Um zu zeigen, das die Spiegelung der Amplituden am Mittelwert den gewünschten Effekt hat, folgen nun ein paar Beispielrechnungen. Eine Spiegelung an einem wert $\mathbf{m}$ entspricht der Abbildung: $\mathbf{\alpha \rightarrow 2 \times m - \alpha}$. \\
 Bei folgender Rechnung wird angenommen, dass die Datenbank vier Elemente enthält ($\mathbf{N=4}$). Der Mittelwert - nach der Negation von $\mathbf{\hat x}$ - hat den Wert: $\mathbf{m = \frac{1}{4} \times (\frac{1}{2}- \frac{1}{2}+ \frac{1}{2} +\frac{1}{2}) = \frac{1}{4}}$. Die Spiegelung von $\mathbf{\hat x}$ entspricht $\mathbf{-\frac{1}{2} \times \frac{1}{4} - (-\frac{1}{2}) = 1}$. Damit ist die Amplitude des gesuchten Elements gleich eins. Das Messen würde mit einer Wahrscheinlichkeit von 100\%  das gesuchte Element $\mathbf{\hat x}$ zurückgeben. Die Amplituden aller anderen Elemente entwickeln sich wie folgt: $\mathbf{\frac{1}{2} \times \frac{1}{4} - \frac{1}{2} = 0}$
 \\ \\
-Sei $\mathbf{N = 8}$, so würde die Amplitude von $\mathbf{ \hat x}$ nach der ersten Grover Iteration $\mathbf{\frac{5}{5\sqrt 8}}$ und alle anderen Amplituden $\mathbf{\frac{1}{2\sqrt 8}}$ betragen. Nach einer Spiegelung am Mittelwert ist die Amplituden von $\mathbf{\hat x}$ wieder positiv, bevor ein erneutes Spiegeln möglich ist, um die Amplitiduen weiter zu verstärken/verringern, muss erneut das Quantenorakel angewandt werden. Nach einer erneuten Negation und Spiegelung, hätte das gesuchte Element $\mathbf{\hat x}$ eine Amplitude von $\mathbf{0,973}$, alle anderen Elemente eine von $\mathbf{-0, 088}$. Würde nun gemessen werden erhielte man mit einer Wahrscheinlichkeit von 93 \% das gesuchte Element.
+Sei $\mathbf{N = 8}$, so würde die Amplitude von $\mathbf{ \hat x}$ nach der ersten Grover Iteration $\mathbf{\frac{5}{5\sqrt 8}}$ und alle anderen Amplituden $\mathbf{\frac{1}{2\sqrt 8}}$ betragen. Nach einer Spiegelung am Mittelwert ist die Amplituden von $\mathbf{\hat x}$ wieder positiv, bevor ein erneutes Spiegeln möglich ist, um die Amplitiduen weiter zu verstärken/verringern, muss erneut das Quantenorakel angewandt werden. Nach einer erneuten Negation und Spiegelung, hätte das gesuchte Element $\mathbf{\hat x}$ eine Amplitude von $\mathbf{0,973}$. Alle anderen Elemente haben eine Amplitude von $\mathbf{-0, 088}$. Würde nun gemessen werden erhielte man mit einer Wahrscheinlichkeit von 93 \% das gesuchte Element.
 \\ 
-Ein erneutes Spiegeln würde die Amplituden von $\mathbf{\hat{x}}$ im Gegensatz zu Erwartung wieder verringern und alle anderen erhöhen. Es ist daher besonders wichtig, dass nicht zu viele Grover Iterationen ausgeführt werden. Wie die Genaue Anzahl an Iterationen berechnet werden kann folgt im Abschnitt \ref{sec:geoVer}
+Ein erneutes Spiegeln würde die Amplituden von $\mathbf{\hat{x}}$ im Gegensatz zu Erwartung wieder verringern und alle anderen erhöhen. Es ist daher besonders wichtig, dass nicht zu viele Grover Iterationen ausgeführt werden. Die Grover Iteration kann mit einem Souffl\'{e} verglichen werden. Dies geht beim Backen langsam auf, wird dieses jedoch zu lange im Offen gelassen geht es wieder ein. Wie die genaue Anzahl an Iterationen berechnet werden kann folgt im Abschnitt \ref{sec:geoVer}
 
 \subsubsection{Graphische Darstellung des Grover Algorithmus}
-In Abbildung \ref{fig:algoInformell} ist der Quantenschaltkreis des Grover Algorithmus nach bisherigen Erklärungsstand zu sehen.
+In Abbildung \ref{fig:algoInformell} ist der Quantenschaltkreis des Grover Algorithmus nach bisherigem Erklärungsstand zu sehen.
 \begin{figure}[hbtp]
 	\centering
 	\includegraphics[width=1\textwidth]{figures/algoInformell.png}
@@ -132,7 +137,7 @@ Die Abbildung \ref{fig:Rgatter} zeigt den Quantenschaltkreis, wenn $\mathbf{N = 
  	\label{fig:Rgatter}
  \end{figure}
 \\
-Es folgen weitere Beispielrechnungen, um zu verdeutlichen, dass der Quantenschaltkreis die Transformation $\mathbf{R_4}$ ausführt.
+Es folgen weitere Beispielrechnungen, um zu verdeutlichen, dass der Quantenschaltkreis in Abbildung \ref{fig:Rgatter} die Transformation $\mathbf{R_4}$ ausführt.
 \subsubsection{Beispielrechnung: Matrix R als lokale Transformation}
  \begin{figure}[hbtp]
 	\centering
@@ -141,7 +146,7 @@ Es folgen weitere Beispielrechnungen, um zu verdeutlichen, dass der Quantenschal
 	\label{fig:Rgatter00}
 \end{figure}
  In den Abbildungen \ref{fig:Rgatter00} werden die Werte der QBits $\mathbf{|00\rangle}$ und wie diese sich durch die einzelnen Gatter verändern dargestellt.
- Die Pauli X-Gatter invertieren den Wert eines QBits. Aus $\mathbf{|0\rangle}$ wird $\mathbf{|1\rangle}$ und andersherum. Das erste Bit wird bis zum letzten Pauli-X Gatter nicht mehr verändert. Es wird ausschließlich genutzt um zu schauen, ob das CNOT aktiviert wird. Das zweite QBit wird durch das erste Hadamar Gatter, in folgende Superposition $\mathbf{\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$ gebracht. Da das erste QBit den Wert $\mathbf{|1\rangle}$ hat wird das zweite QBit durch das CNOT negiert, und hat den Wert: $\mathbf{-\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$. Anschließend durch läuft das zweite Bit wieder ein Hadamar Gatter. Das QBit hat anschließend folgenden Wert: $\mathbf{-|1\rangle}$.
+ Die Pauli X-Gatter invertieren den Wert eines QBits. Aus $\mathbf{|0\rangle}$ wird $\mathbf{|1\rangle}$ und andersherum. Das erste Bit wird bis zum letzten Pauli-X Gatter nicht mehr verändert. Es wird ausschließlich genutzt um zu schauen, um die Operation CNOT zu aktivieren. Das zweite QBit wird durch das erste Hadamar Gatter, in folgende Superposition $\mathbf{\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$ gebracht. Da das erste QBit den Wert $\mathbf{|1\rangle}$ hat wird das zweite QBit durch das CNOT negiert, und hat den Wert: $\mathbf{-\frac{1}{\sqrt 2}(|0\rangle - |1\rangle)}$. Anschließend durch läuft das zweite Bit wieder ein Hadamar Gatter. Das QBit hat anschließend folgenden Wert: $\mathbf{-|1\rangle}$.
  Zum Schluss werden beide Bits ($\mathbf{|1\rangle}$ und $\mathbf{-|1\rangle}$) durch die Pauli-X Gatter invertiert und wir erhalten das gewünschte und erwartete Ergebnis $\mathbf{-|00\rangle}$.
   \\
   \\
