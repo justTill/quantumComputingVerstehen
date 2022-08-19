@@ -25,7 +25,7 @@ Wird nun eine Grover Iteration durchgeführt, ändert sich der Winkel wie folgt:
 Durch die Rechnung konnte gezeigt werden, dass der Startwinkel $\mathbf{\frac{1}{\sqrt{N}}}$ beträgt und der Winkel nach $\mathbf{T}$ Grover Iterationen der Winkel den Wert $\mathbf{(2 \times T + 1)\times \frac{1}{\sqrt{N}}}$ hat. 
 Falls für $\mathbf{T = \frac{\pi}{4}\times \sqrt{N}}$ gewählt wird, wird immer sehr nah an das gesuchten Element rotiert. 
 \\
-In der Praktischen Umsetzung, muss $\mathbf{T}$ immer abgerundet werden, da nur eine gerade Zahl an Iterationen durchgeführt werden kann. Wird $\mathbf{T}$ aufgerundet, werden zu viele Grover-Iterationen durchgeführt und es wird sich vom gesuchten Element wieder entfernt. QUELLE DAS STEHT NICHT IN HOEHMEISTER
+In der Praktischen Umsetzung, muss $\mathbf{T}$ immer abgerundet werden, da nur eine gerade Zahl an Iterationen durchgeführt werden kann. Wird $\mathbf{T}$ aufgerundet, werden zu viele Grover-Iterationen durchgeführt und es wird sich vom gesuchten Element wieder entfernt. \cite[S. 157]{KLM07}
 \\
 \\
 Dadurch dass die Anzahl der Grover-Iterationen $\mathbf{ \frac{\pi}{4}\times \sqrt{N}}$ beträgt und in jeder Iteration einmal das Quantenorakel aufgerufen wird, beträgt die Laufzeit des Grover Algorithmus $\mathbf{O(\sqrt N)}$
