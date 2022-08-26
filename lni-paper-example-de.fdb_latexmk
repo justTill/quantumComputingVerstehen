@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber lni-paper-example-de"] 1661534223 "lni-paper-example-de.bcf" "lni-paper-example-de.bbl" "lni-paper-example-de" 1661534241
-  "lni-paper-example-de.bcf" 1661534241 108117 a1fd3bfa8a76746215a803664150f755 "pdflatex"
+["biber lni-paper-example-de"] 1661545247 "lni-paper-example-de.bcf" "lni-paper-example-de.bbl" "lni-paper-example-de" 1661552105
+  "lni-paper-example-de.bcf" 1661552104 108117 a1fd3bfa8a76746215a803664150f755 "pdflatex"
   "lni-paper-example-de.bib" 1661511464 2710 a4e400cf2d6f196aaf27c1bc2b42faf7 ""
   (generated)
   "lni-paper-example-de.bbl"
   "lni-paper-example-de.blg"
-["pdflatex"] 1661534238 "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" "lni-paper-example-de.pdf" "lni-paper-example-de" 1661534241
-  "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" 1661534236 7891 dfcbcc98261c3def5fb36fa03d2ae4b0 ""
+["pdflatex"] 1661552102 "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" "lni-paper-example-de.pdf" "lni-paper-example-de" 1661552105
+  "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" 1661546268 7907 12fa13d4ea2276f46950d11c58dd2baf ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1640468671 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -219,8 +219,8 @@
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649103879 2826444 0841c62176cf598a9dbc78af8fc035e2 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
   "anwendungenDesGroversAlgorithmus.tex" 1661534205 2161 11017090a4b51f7647c7f8204498e733 ""
-  "aufgabenstellung.tex" 1660858562 1738 9c05e1e9ad1cb48054139c7a26a04857 ""
-  "einleitung.tex" 1660857581 1702 26936cfdd947c8554ea7a3ade8de600d ""
+  "aufgabenstellung.tex" 1661549314 1739 a7589d04e879226432205f293cfa3b1d ""
+  "einleitung.tex" 1661546506 1704 070333df093e88b5ee915e9112131d49 ""
   "figures/RGatter00.png" 1660136331 72565 36027bdab61b164a13495105f206d096 ""
   "figures/RGatter01.png" 1660136331 73131 31dba6f70e7a0c2a3c028c164e0c1962 ""
   "figures/algoFormell.png" 1660136331 66933 0502652ea1f2e4dff8f1dc05dff4387e ""
@@ -233,13 +233,13 @@
   "figures/suche-minimum-visualisierung.png" 1660892271 385148 7b7e1289f92167b8e20cdf005a27ae6d ""
   "figures/zweiEbenen.png" 1660136331 43838 3bde47ee041aec84d49c7638f845808a ""
   "folgenFuerQuantencomputern.tex" 1661534236 734 aeaf1f57719eb47a01b9f160e8c114b4 ""
-  "geometrischeVeranschaulichung.tex" 1661511464 3936 6d6753257607bbe750391218e25bf531 ""
-  "groversAlgorithmen.tex" 1661511464 15400 c559c70783d2c6646edd4a78cc598935 ""
-  "lni-paper-example-de.aux" 1661534241 13076 a550891abfd329e1b4a8232fec9683e5 "pdflatex"
-  "lni-paper-example-de.bbl" 1661534225 4679 29cf4b755a5d4161c1f25a77dcc59df6 "biber lni-paper-example-de"
-  "lni-paper-example-de.run.xml" 1661534241 2652 0fd00847b5e2af5e38264c037ad8e292 "pdflatex"
-  "lni-paper-example-de.tex" 1661534236 7891 dfcbcc98261c3def5fb36fa03d2ae4b0 ""
-  "variantenDerQuantensuche.tex" 1660895723 13054 3e7df2626691cb88760239c1aaddfd72 ""
+  "geometrischeVeranschaulichung.tex" 1661551300 3925 94309138342420b6d57ec5494e3944c5 ""
+  "groversAlgorithmen.tex" 1661550686 15410 4af7e938183fd934d6395d68ee3db927 ""
+  "lni-paper-example-de.aux" 1661552104 13075 99047d60f5717f375eabd6a74d0abce3 "pdflatex"
+  "lni-paper-example-de.bbl" 1661545249 4679 29cf4b755a5d4161c1f25a77dcc59df6 "biber lni-paper-example-de"
+  "lni-paper-example-de.run.xml" 1661552104 2652 0fd00847b5e2af5e38264c037ad8e292 "pdflatex"
+  "lni-paper-example-de.tex" 1661546268 7907 12fa13d4ea2276f46950d11c58dd2baf ""
+  "variantenDerQuantensuche.tex" 1661552102 13284 fff0700868ac25d1c05591163a67e2d9 ""
   (generated)
   "lni-paper-example-de.aux"
   "lni-paper-example-de.bcf"

@@ -2,7 +2,7 @@ Das grundlegende Problem, welches im Folgenden betrachtet wird, ist die unstrukt
 Es soll ein gegebenes Datum aus einer Menge von Datensätzen gefunden werden. 
 Die Datensätze sind dabei entweder gänzlich unsortiert oder nach einem Kriterium, welches für die Suche keine Relevanz besitzt. 
 Die Suche kann mit einer Funktion $\mathbf{f(x)}$ abgebildet werden, welche die Datensätze $\mathbf{x}$ als Eingabe akzeptiert. 
-Der gesuchte Datensatz wird mit $\mathbf{\hat x}$ bezeichnet. Ist der Datensatz $\mathbf{x}$ nicht der gesuchte, so gilt $\mathbf{f(x) = 0}$, andernfalls $\mathbf{f(\hat x) = 1}$. 
+Der gesuchte Datensatz wird mit $\mathbf{\hat x}$ bezeichnet. Ist der Datensatz $\mathbf{x}$ nicht der Gesuchte, so gilt $\mathbf{f(x) = 0}$, andernfalls $\mathbf{f(\hat x) = 1}$. 
 Die Datensätze sind dabei Teil der Menge $\mathbf{N}$ mit $\mathbf{N = 2^n}$. Die Suche ist dann erfolgreich, wenn ein Element $\mathbf{\hat x}$ gefunden wurde, für das $\mathbf{f(\hat x) = 1}$ gilt.
 \newline
 \\
@@ -12,4 +12,4 @@ Dieser Fall ist jedoch sehr unwahrscheinlich und ein klassischer Rechner wertet 
 \\
 Diese Laufzeit lässt sich unter der Verwendung von einem Quantencomputer mit dem Grover-Algorithmus deutlich verbessern. 
 Der Grovers-Algorithmus erreicht eine quadratische Beschleunigung der Suche, indem $\mathbf{f(x)}$ nur noch $\mathbf{\sqrt{N}}$-mal ausgewertet werden muss. 
-Abbildung X zeigt anschaulich den Vergleich der verschiedenen Laufzeiten. Wie genau der Grovers-Algorithmus diese Beschleunigung erreicht wird in den folgenden Abschnitten erläutert.
+Abbildung X zeigt anschaulich den Vergleich der verschiedenen Laufzeiten. Wie genau der Grovers-Algorithmus diese Beschleunigung erreicht, wird in den folgenden Abschnitten erläutert.

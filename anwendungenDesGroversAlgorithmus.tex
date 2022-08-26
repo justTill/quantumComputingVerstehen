@@ -1,8 +1,18 @@
 \subsection{Grover ist optimal}
-Wie in Kapitel x gezeigt wurde, erreicht der Grovers Suchalgorithmus eine quadratische Beschleunigung im Vergleich zu klassischen Suchalgorithmen in unstrukturierten Datenmengen. Gerade im Hinblick auf NP-vollständige Probleme stellt sich jedoch die Frage, ob eine noch größere Beschleunigung erreicht werden kann. Der Idealfall wäre eine exponentielle Beschleunigung der Suche. Diese Beschleunigung ist jedoch mit dem Grovers-Algorithmus nicht erreichbar. Es ist bewiesen, dass Grovers optimal ist (vgl. ). Diese Limitierung ist relevant, wenn die Anwendungsmöglichkeiten von Grover betrachtet werden.
+Wie in Kapitel x gezeigt wurde, erreicht der Grovers Suchalgorithmus eine quadratische Beschleunigung im Vergleich zu klassischen Suchalgorithmen in unstrukturierten Datenmengen. 
+Gerade im Hinblick auf NP-vollständige Probleme stellt sich jedoch die Frage, ob eine noch größere Beschleunigung erreicht werden kann. Der Idealfall wäre eine exponentielle Beschleunigung der Suche. 
+Diese Beschleunigung ist jedoch mit dem Grovers-Algorithmus nicht erreichbar. 
+Es ist bewiesen, dass Grovers optimal ist (vgl. ). 
+Diese Limitierung ist relevant, wenn die Anwendungsmöglichkeiten von Grover betrachtet werden.
 \subsection{klassische Datenbanken}
-Grundsätzlich kann der Grover-Algorithmus eingesetzt werden, um klassische Datenbanken zu durchsuchen. Dazu wird allerdings ein aufwendiges Adressierungssystem benötigt, um die Verbindung zwischen klassischer Datenbank und Quantenhardware herzustellen. Ob dies zukünftig ein praktikabler Einsatzort für Quantensuchen wird, ist abhängig von der Entwicklung der verfügbaren Quantenhardware und deren Preisentwicklung.
+Grundsätzlich kann der Grover-Algorithmus eingesetzt werden, um klassische Datenbanken zu durchsuchen. 
+Dazu wird allerdings ein aufwendiges Adressierungssystem benötigt, um die Verbindung zwischen klassischer Datenbank und Quantenhardware herzustellen. 
+Ob dies zukünftig ein praktikabler Einsatzort für Quantensuchen wird, ist abhängig von der Entwicklung der verfügbaren Quantenhardware und deren Preisentwicklung.
 \subsection{NP-vollständige Probleme}
-Weiterhin lässt sich der Grovers-Algorithmus grundsätzlich für jedes Problem aus NP anwenden. So kann beispielsweise für das Travelings Salesperson Problem mit Hilfe der G-BBHT-Suche aus Kapitel x in O(sqrt N) eine Rundreise gefunden werden, die kürzer ist als eine gegebene Rundreise k. Mit der Suche nach dem Minimum aus Kapitel x kann sogar die kürzeste Rundreise aus N gefunden werden.
+Weiterhin lässt sich der Grovers-Algorithmus grundsätzlich für jedes Problem aus NP anwenden. So kann beispielsweise für das Traveling Salesperson Problem mithilfe der G-BBHT-Suche aus Kapitel x in O(sqrt N) eine Rundreise gefunden werden, die kürzer ist als eine gegebene Rundreise k. 
+Mit der Suche nach dem Minimum aus Kapitel x kann sogar die kürzeste Rundreise aus N gefunden werden.
 \\
-In N liegt jedoch das limitierende Problem. Sollen beispielsweise n Städte besucht werden, so ergeben sich N=(n-1)! mögliche Rundreisen. Abbildung x zeigt, wie N im Verhältnis zu der Anzahl der Städte exponentiell wächst und somit verheerend groß wird. Die quadratische Beschleunigung durch den Grovers Algorithmus ist nicht ausreichend, um dieses Problem mit polynomialen Aufwand lösen zu können. Dazu wäre eine exponentielle Beschleunigung der Suche notwendig, dann könnte das Problem mit Theta (n * log n) gelöst werden können. Da jedoch bewiesen ist, dass Grovers Algorithmus optimal ist, ist dies unmöglich.
+In N liegt jedoch das limitierende Problem. Sollen beispielsweise n Städte besucht werden, so ergeben sich N=(n-1)! mögliche Rundreisen. Abbildung x zeigt, wie N im Verhältnis zu der Anzahl der Städte exponentiell wächst und somit verheerend groß wird. 
+Die quadratische Beschleunigung durch den Grovers Algorithmus ist nicht ausreichend, um dieses Problem mit polynomialen Aufwand lösen zu können. 
+Dazu wäre eine exponentielle Beschleunigung der Suche notwendig, dann könnte das Problem mit Theta (n * log n) gelöst werden können. 
+Da jedoch bewiesen ist, dass Grovers Algorithmus optimal ist, ist dies unmöglich.
