@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber lni-paper-example-de"] 1660894501 "lni-paper-example-de.bcf" "lni-paper-example-de.bbl" "lni-paper-example-de" 1660894508
-  "lni-paper-example-de.bcf" 1660894508 108021 64f0ad00435897ae257041edc68e13c6 "pdflatex"
-  "lni-paper-example-de.bib" 1660894440 2582 0919ca49a484e09af9f49ddfbde15441 ""
+["biber lni-paper-example-de"] 1661534223 "lni-paper-example-de.bcf" "lni-paper-example-de.bbl" "lni-paper-example-de" 1661534241
+  "lni-paper-example-de.bcf" 1661534241 108117 a1fd3bfa8a76746215a803664150f755 "pdflatex"
+  "lni-paper-example-de.bib" 1661511464 2710 a4e400cf2d6f196aaf27c1bc2b42faf7 ""
   (generated)
   "lni-paper-example-de.bbl"
   "lni-paper-example-de.blg"
-["pdflatex"] 1660894506 "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" "lni-paper-example-de.pdf" "lni-paper-example-de" 1660894508
-  "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" 1660859480 7930 ef1f54b4a6e222a47228bcc10650d0d3 ""
+["pdflatex"] 1661534238 "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" "lni-paper-example-de.pdf" "lni-paper-example-de" 1661534241
+  "/Users/sabrina/Master/QCV/Git/quantumComputingVerstehen/lni-paper-example-de.tex" 1661534236 7891 dfcbcc98261c3def5fb36fa03d2ae4b0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1640468671 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -218,7 +218,7 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1649103879 2826444 0841c62176cf598a9dbc78af8fc035e2 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "anwendungenDesGroversAlgorithmus.tex" 1660136331 49 36be68cab34e2244f158d037969bcbee ""
+  "anwendungenDesGroversAlgorithmus.tex" 1661534205 2161 11017090a4b51f7647c7f8204498e733 ""
   "aufgabenstellung.tex" 1660858562 1738 9c05e1e9ad1cb48054139c7a26a04857 ""
   "einleitung.tex" 1660857581 1702 26936cfdd947c8554ea7a3ade8de600d ""
   "figures/RGatter00.png" 1660136331 72565 36027bdab61b164a13495105f206d096 ""
@@ -232,14 +232,14 @@
   "figures/spiegelung.png" 1660136331 19006 1b726b48b580ebc0b96c7d2da21279fe ""
   "figures/suche-minimum-visualisierung.png" 1660892271 385148 7b7e1289f92167b8e20cdf005a27ae6d ""
   "figures/zweiEbenen.png" 1660136331 43838 3bde47ee041aec84d49c7638f845808a ""
-  "folgenFuerQuantencomputern.tex" 1660136331 67 3374ed027f9f5ae06a53c09bd430e1a1 ""
-  "geometrischeVeranschaulichung.tex" 1660859480 3910 87fa40354b894bcb1e09f17a0029a366 ""
-  "groversAlgorithmen.tex" 1660859480 14728 463947a357777d111af9747f902571dc ""
-  "lni-paper-example-de.aux" 1660894508 12445 4ed350a2609b302c75b43292bb2cb206 "pdflatex"
-  "lni-paper-example-de.bbl" 0 -1 0 "biber lni-paper-example-de"
-  "lni-paper-example-de.run.xml" 1660894508 2652 119d29d2eb3f9532d21e7153e72212ec "pdflatex"
-  "lni-paper-example-de.tex" 1660859480 7930 ef1f54b4a6e222a47228bcc10650d0d3 ""
-  "variantenDerQuantensuche.tex" 1660894494 13054 3e7df2626691cb88760239c1aaddfd72 ""
+  "folgenFuerQuantencomputern.tex" 1661534236 734 aeaf1f57719eb47a01b9f160e8c114b4 ""
+  "geometrischeVeranschaulichung.tex" 1661511464 3936 6d6753257607bbe750391218e25bf531 ""
+  "groversAlgorithmen.tex" 1661511464 15400 c559c70783d2c6646edd4a78cc598935 ""
+  "lni-paper-example-de.aux" 1661534241 13076 a550891abfd329e1b4a8232fec9683e5 "pdflatex"
+  "lni-paper-example-de.bbl" 1661534225 4679 29cf4b755a5d4161c1f25a77dcc59df6 "biber lni-paper-example-de"
+  "lni-paper-example-de.run.xml" 1661534241 2652 0fd00847b5e2af5e38264c037ad8e292 "pdflatex"
+  "lni-paper-example-de.tex" 1661534236 7891 dfcbcc98261c3def5fb36fa03d2ae4b0 ""
+  "variantenDerQuantensuche.tex" 1660895723 13054 3e7df2626691cb88760239c1aaddfd72 ""
   (generated)
   "lni-paper-example-de.aux"
   "lni-paper-example-de.bcf"
