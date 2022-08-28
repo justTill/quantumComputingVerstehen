@@ -13,16 +13,17 @@ So kann beispielsweise für das Traveling Salesperson Problem mithilfe der G-BBH
 Mit der Suche nach dem Minimum aus Kapitel \ref{minimum} kann sogar die kürzeste Rundreise aus $\mathbf{N}$ gefunden werden.
 
 \begin{figure}
-    \centering
+	\centering
 	\includegraphics[width=0.7\textwidth]{figures/tsp.jpg}
-
-    \caption{Exponentielles Wachstum der möglichen Rundreisen mit steigender Anzahl der Städte\\Quelle: Eigene Darstellung}
-
+	
+	\caption{Exponentielles Wachstum der möglichen Rundreisen mit steigender Anzahl der Städte\\Quelle: Eigene Darstellung}
+	
 	\label{fig:tsp}
 \end{figure}
 
 In $\mathbf{N}$ liegt jedoch das limitierende Problem. Sollen beispielsweise $\mathbf{n}$ Städte besucht werden, so ergeben sich $\mathbf{N=(n-1)!}$ mögliche Rundreisen. 
 \Cref{fig:tsp} zeigt, wie $\mathbf{N}$ im Verhältnis zu der Anzahl der Städte exponentiell wächst und somit verheerend groß wird. 
-Die quadratische Beschleunigung durch den Grovers Algorithmus ist nicht ausreichend, um dieses Problem mit polynomialen Aufwand lösen zu können. 
+Die quadratische Beschleunigung durch den Grovers Algorithmus ist nicht ausreichend, um dieses Problem mit polynomialem Aufwand lösen zu können. 
 Dazu wäre eine exponentielle Beschleunigung der Suche notwendig, dann könnte das Problem mit $\mathbf{\theta (n * \log n)}$ gelöst werden können. 
 Da jedoch bewiesen ist, dass Grovers Algorithmus optimal ist, ist dies unmöglich.
+
