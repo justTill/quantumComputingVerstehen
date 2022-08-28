@@ -1,7 +1,7 @@
 Grovers Suchalgorithmus lässt sich so anpassen, dass er auch auf ähnliche verwandte Probleme angewandt werden kann.
 Bisher wurde für den Algorithmus vorausgesetzt, dass $\mathbf{f}$ genau ein Element $\mathbf{\hat x}$ auf $\mathbf{1}$ abbildet und die anderen Elemente auf $\mathbf{0}$. 
 Diese Voraussetzung ist aber nicht bei jeder Suche gegeben. In den folgenden Abschnitten werden Suchalgorithmen betrachtet, bei denen es mehr als eine korrekte Lösung und unbekannt viele Lösungen gibt. 
-Abschließend wird in Abschnitt x die Suche nach dem Minimum betrachtet. 
+Abschließend wird in Kapitel \ref{minimum} die Suche nach dem Minimum betrachtet. 
 
 \subsection{Suche nach einer von mehreren Lösungen}
 
@@ -42,23 +42,22 @@ Im Regelfall wird die Grover-Iteration $\mathbf{T = \frac{\pmb\pi}{4} \times \sq
 Damit reduziert die Anzahl der vorhandenen Lösungen in $\mathbf{N}$ die Anzahl der benötigten Grover-Iterationen. 
 Für den Fall, dass $\mathbf{k \geq \frac{3}{4} \times N}$ kann ein zufälliges Element $\mathbf{x}$ aus $\mathbf{N}$ gewählt und $\mathbf{f(x)}$ ausgewertet werden. 
 Mit einer 75-prozentigen Wahrscheinlichkeit wird $\mathbf{f(x) = 1}$ auswerten.
-\\
-LAUFZEIT
 
-\subsection{Suche nach unbekannt vielen Lösungen}
+\subsection{Suche nach unbekannt vielen Lösungen} \label{gbbht}
 Eine größere Herausforderung stellt die Suche dar, wenn im Vorhinein nicht bekannt ist, wie viele Lösungen in der durchsuchten Menge $\mathbf{N}$ vorhanden sind. 
 Bisher wurde die Anzahl der Lösungen benötigt, um die Anzahl der Grover-Iterationen zu bestimmen, damit durch die Amplitudenveränderung mit großer Wahrscheinlichkeit das gesuchte Element gefunden wird. 
 Ist die Anzahl der richtigen Elemente vorher nicht bekannt, so muss die Anzahl der Iterationen auf eine andere Weise bestimmt werden. 
 Dazu wurde der Grover-Algorithmus von Boyer, Brassard, Høyer und Tapp weiterentwickelt und wird dementsprechend als G-BBHT Suche bezeichnet.
-Wie bei der Suche nach einer von mehreren Lösungen ist ein Orakel $\mathbf{U \textsubscript{f}}$ gegeben, mit der Funktion $\mathbf{f}$, die genau $\mathbf{k}$ Elemente $\mathbf{U \textsubscript{f}}$ gegeben, wobei die Funktion $\mathbf{f}$ genau $\mathbf{k}$ Elemente $\mathbf{\hat x \textsubscript{1}}$, ..., $\mathbf{\hat x \textsubscript{k}}$ auf $\mathbf{1}$ abbildet und die restlichen Elemente auf $\mathbf{0}$. $\mathbf{N}$ ist wieder gegeben durch $\mathbf{N = n^2}$, allerdings ist dieses mal nicht bekannt, wie groß $\mathbf{k}$ ist. Der angepasste Algorithmus läuft folgendermaßen ab:
+
+Wie bei der Suche nach einer von mehreren Lösungen ist ein Orakel $\mathbf{U \textsubscript{f}}$ gegeben, wobei die Funktion $\mathbf{f}$ genau $\mathbf{k}$ Elemente $\mathbf{\hat x \textsubscript{1}}$, ..., $\mathbf{\hat x \textsubscript{k}}$ auf $\mathbf{1}$ abbildet und die restlichen Elemente auf $\mathbf{0}$. $\mathbf{N}$ ist wieder gegeben durch $\mathbf{N = n^2}$, allerdings ist dieses mal nicht bekannt, wie groß $\mathbf{k}$ ist. Der angepasste Algorithmus läuft folgendermaßen ab:
 \begin{quote}
     \begin{enumerate}
-        \item \textbf{Superpositionen aufbauen}
+        \item \textbf{zufälliges Element}
         \\
         Ein zufälliges Element $\mathbf{x}$ wird aus $\mathbf{N}$ ausgewählt. Wenn $\mathbf{f(x) = 1}$ auswertet, wurde erfolgreich eins der gesuchten Elemente gefunden und es kann an dieser Stelle gestoppt werden. 
         \\
         Hintergrund ist, dass $\mathbf{k \geq \frac{3}{4} \times N}$ sein könnte und in diesem Fall mit großer Wahrscheinlichkeit auch ohne Iterationen ein korrektes Ergebnis erreicht werden kann. Wertet $\mathbf{f(x) = 0}$ aus, dann wird im 2. Schritt fortgefahren.
-        \item \textbf{Superpositionen aufbauen}
+        \item \textbf{zufällige Anazhl Iterationen wählen}
         \\
         Es wird ein zufälliger Wert $\mathbf{r}$ ausgewählt mit $\mathbf{r \in \{ 1, ..., \sqrt{N} \}}$. Dieses $\mathbf{r}$ bestimmt die Anzahl der Iterationen im 4. Schritt.
         \item \textbf{Superpositionen aufbauen}
@@ -81,13 +80,14 @@ Wie bei der Suche nach einer von mehreren Lösungen ist ein Orakel $\mathbf{U \t
 
 Aus der Veröffentlichung von Boyer, Brassard, Høyer und Tapp geht hervor, dass bei Anwendung dieses Algorithmus nach einem Durchlauf eine Lösung mit einer Wahrscheinlichkeit von 25\% gefunden wurde. 
 Trotz der zufällig gewählten Anzahl von Iterationen beträgt die Laufzeit für diesen Algorithmus $\mathbf{O(\sqrt{N})}$.
+
 Boyer, Brassard, Høyer und Tapp beschreiben eine weitere Modifizierung des Algorithmus, die es erlaubt die Laufzeit auf $\mathbf{O(\frac{N}{k})}$ zu senken. 
 Dazu wird vor Beginn des Algorithmus ein $\mathbf{\pmb\lambda \in \{1, ..., \frac{4}{3} \} }$ gewählt und $\mathbf{m = 1}$ initialisiert. Die Anzahl der Iterationen $\mathbf{r}$ wird dann im 2. Schritt nicht mehr aus $\mathbf{\{1, ..., \sqrt{N}\}}$ gewählt, sondern aus $\mathbf{\{0, ..., m\}}$. 
 Wertet $\mathbf{f(x)}$ im 5. Schritt dann zu $\mathbf{0}$ aus, wird $\mathbf{m}$ mit dem Faktor $\mathbf{\pmb\lambda}$ multipliziert, sodass bei dem nächsten Durchlauf des Algorithmus im 2. Schritt $\mathbf{e}$ aus $\mathbf{\{0, ..., \pmb\lambda \times m\}}$  gewählt wird. 
 Im schlechtesten Fall wird so lange keine Lösung gefunden, dass $\mathbf{\pmb\lambda \times m > \sqrt{N}}$ gilt. Dann wird im 2. Schritt $\mathbf{r}$ wieder zufällig aus $\mathbf{\{0, ..., \sqrt{N}\}}$ gewählt, bis der Algorithmus terminiert \cite[S. 141]{Ho99}.
 
 
-\subsection{Suche nach dem Minimum}
+\subsection{Suche nach dem Minimum} \label{minimum}
 Bei den bisherigen Suchen wurde nur eine lokale Eigenschaft der Elemente berücksichtigt: handelt es sich bei dem aktuellen Element um jenes, welches gesucht wird. 
 Vollkommen unabhängig von den anderen Elementen, die sich in $\mathbf{N}$ befinden. Bei der Suche nach dem Minimum ist jedoch eine globale Eigenschaft ausschlaggebend: Ist dieses Element kleiner als alle anderen Elemente aus dem Feld.
 Zur Lösung dieses Problems haben 1996 Dürr und Høyer basierend auf der G-BBHT Suche weiter gearbeitet und den folgenden Algorithmus entwickelt: 
@@ -100,6 +100,8 @@ Für das Orakel werden zwei Quantenregister $\mathbf{|x\rangle}$ und $\mathbf{|y
     U: |x\rangle|y\rangle|h\rangle \mapsto |x\rangle|y\rangle|h \oplus f(x,y)\rangle
 \end{equation}
 
+Die dazugehörende Funktion $\mathbf{f}$ ist folgendermaßen definiert:
+
 \begin{equation}
     f(x,y) = \begin{cases}
         1 & \text{falls } T[x] < T[y]\\    
@@ -107,6 +109,8 @@ Für das Orakel werden zwei Quantenregister $\mathbf{|x\rangle}$ und $\mathbf{|y
       \end{cases}
 \end{equation}
 
+Der Algorithmus durchläuft die folgenden Schritte:
+ 
 \begin{quote}
     \begin{enumerate}
         \item \textbf{Schrankenindex wählen}
@@ -115,7 +119,7 @@ Für das Orakel werden zwei Quantenregister $\mathbf{|x\rangle}$ und $\mathbf{|y
         \begin{equation}
             |y\rangle \leftarrow |j\rangle
         \end{equation}
-        \item \textbf{Superpositionen aufbauen}
+        \item \textbf{Näherung an das Minimum}
         \\
         Nach Dürr und Høyer werden die folgenden Schritte wiederholt, bis die Gesamtlaufzeit $\mathbf{22,5 \times \sqrt{N} + 1,4 \times \pmb\log\textsubscript{2}N^2}$ überschreitet \cite[S. 141]{Ho96}. 
         Anschließend wird mit Schritt 2. c) fortgefahren:
@@ -147,7 +151,7 @@ Für das Orakel werden zwei Quantenregister $\mathbf{|x\rangle}$ und $\mathbf{|y
 \end{quote}
 
 Der Algorithmus ist auf den ersten Blick, insbesondere durch die Verwendung der G-BBHT Suche, recht abstrakt. 
-Abbildung \ref{fig:sucheMinimumVisualisierung} soll das Verständnis durch eine vereinfachte grafische Darstellung des Vorgehens vereinfachen. 
+Abbildung \ref{fig:sucheMinimumVisualisierung} soll das Verständnis durch eine vereinfachte grafische Darstellung des Vorgehens erleichtern. 
 Der Datensatz in der Abbildung enthält hier beispielhaft die Werte $\mathbf{\{1, ..., 18\}}$, welche sich unsortiert im Feld befinden. Für die Verständlichkeit sind diese in der Abbildung jedoch aufsteigend sortiert.
 \\
 Zunächst wird im 1. Schritt der anfängliche Schrankenindex $\mathbf{j = 13}$ zufällig gewählt und das Register $\mathbf{|y\rangle \leftarrow |j\rangle}$ initialisiert. 

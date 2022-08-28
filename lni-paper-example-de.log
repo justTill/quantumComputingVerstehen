@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  27 AUG 2022 00:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.4)  28 AUG 2022 15:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1167,18 +1167,27 @@ LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
 (Font)              scaled to size 10.0pt on input line 67.
 [1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./aufgabenstellung.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--70
+] (./aufgabenstellung.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--16
 
  []
 
-(./groversAlgorithmen.tex
+<figures/laufzeit-aufgabenstellung.jpg, id=28, 2031.59pt x 1150.2975pt>
+File: figures/laufzeit-aufgabenstellung.jpg Graphic file (type jpg)
+<use figures/laufzeit-aufgabenstellung.jpg>
+Package pdftex.def Info: figures/laufzeit-aufgabenstellung.jpg  used on input line 19.
+(pdftex.def)             Requested size: 250.95233pt x 142.08427pt.
+<figures/legende.png, id=29, 193.72375pt x 189.70876pt>
+File: figures/legende.png Graphic file (type png)
+<use figures/legende.png>
+Package pdftex.def Info: figures/legende.png  used on input line 20.
+(pdftex.def)             Requested size: 59.1509pt x 57.92331pt.
+) (./groversAlgorithmen.tex [2]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 15.
- [2]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 21.
-<figures/amplitudenveraenderung.png, id=34, 476.78125pt x 206.7725pt>
+<figures/amplitudenveraenderung.png, id=47, 476.78125pt x 206.7725pt>
 File: figures/amplitudenveraenderung.png Graphic file (type png)
 <use figures/amplitudenveraenderung.png>
 Package pdftex.def Info: figures/amplitudenveraenderung.png  used on input line 37.
@@ -1198,45 +1207,45 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--52
 
  []
 
-[3]
-<figures/algoInformell.png, id=50, 517.935pt x 145.54375pt>
+[3 <./figures/laufzeit-aufgabenstellung.jpg> <./figures/legende.png>] [4 <./figures/amplitudenveraenderung.png>]
+<figures/algoInformell.png, id=70, 517.935pt x 145.54375pt>
 File: figures/algoInformell.png Graphic file (type png)
 <use figures/algoInformell.png>
 Package pdftex.def Info: figures/algoInformell.png  used on input line 57.
 (pdftex.def)             Requested size: 358.5049pt x 100.7473pt.
- [4 <./figures/amplitudenveraenderung.png>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 5.5pt on input line 76.
-<figures/spiegelung.png, id=62, 359.3425pt x 104.39pt>
+ [5 <./figures/algoInformell.png>]
+<figures/spiegelung.png, id=83, 359.3425pt x 104.39pt>
 File: figures/spiegelung.png Graphic file (type png)
 <use figures/spiegelung.png>
 Package pdftex.def Info: figures/spiegelung.png  used on input line 99.
 (pdftex.def)             Requested size: 286.80501pt x 83.32413pt.
- [5 <./figures/algoInformell.png>]
-<figures/householderLokal_1.png, id=72, 509.905pt x 143.53625pt>
+<figures/householderLokal_1.png, id=84, 509.905pt x 143.53625pt>
 File: figures/householderLokal_1.png Graphic file (type png)
 <use figures/householderLokal_1.png>
 Package pdftex.def Info: figures/householderLokal_1.png  used on input line 119.
 (pdftex.def)             Requested size: 286.80501pt x 80.73894pt.
-<figures/householderLokal_2.png, id=73, 509.905pt x 143.53625pt>
+<figures/householderLokal_2.png, id=85, 509.905pt x 143.53625pt>
 File: figures/householderLokal_2.png Graphic file (type png)
 <use figures/householderLokal_2.png>
 Package pdftex.def Info: figures/householderLokal_2.png  used on input line 120.
 (pdftex.def)             Requested size: 286.80501pt x 80.73894pt.
 Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/9'
 (microtype)             (new value: 9.0pt) on input line 121.
-<figures/rgatter.png, id=77, 308.15125pt x 100.375pt>
+ [6 <./figures/spiegelung.png>]
+<figures/rgatter.png, id=98, 308.15125pt x 100.375pt>
 File: figures/rgatter.png Graphic file (type png)
 <use figures/rgatter.png>
 Package pdftex.def Info: figures/rgatter.png  used on input line 135.
 (pdftex.def)             Requested size: 286.80501pt x 93.42894pt.
- [6 <./figures/spiegelung.png>]
-<figures/RGatter00.png, id=88, 618.31pt x 216.81pt>
+<figures/RGatter00.png, id=100, 618.31pt x 216.81pt>
 File: figures/RGatter00.png Graphic file (type png)
 <use figures/RGatter00.png>
 Package pdftex.def Info: figures/RGatter00.png  used on input line 144.
 (pdftex.def)             Requested size: 286.80501pt x 100.57079pt.
-<figures/RGatter01.png, id=90, 618.31pt x 216.81pt>
+ [7 <./figures/householderLokal_1.png> <./figures/householderLokal_2.png>]
+<figures/RGatter01.png, id=113, 618.31pt x 216.81pt>
 File: figures/RGatter01.png Graphic file (type png)
 <use figures/RGatter01.png>
 Package pdftex.def Info: figures/RGatter01.png  used on input line 155.
@@ -1256,14 +1265,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--167
 
  []
 
-[7 <./figures/householderLokal_1.png> <./figures/householderLokal_2.png> <./figures/rgatter.png>] [8 <./figures/RGatter00.png> <./figures/RGatter01.png>]
-<figures/algoFormell.png, id=112, 654.445pt x 216.81pt>
+[8 <./figures/rgatter.png> <./figures/RGatter00.png>]
+<figures/algoFormell.png, id=126, 654.445pt x 216.81pt>
 File: figures/algoFormell.png Graphic file (type png)
 <use figures/algoFormell.png>
 Package pdftex.def Info: figures/algoFormell.png  used on input line 172.
 (pdftex.def)             Requested size: 358.5049pt x 118.76947pt.
 ) (./geometrischeVeranschaulichung.tex
-<figures/zweiEbenen.png, id=114, 329.23pt x 273.02pt>
+<figures/zweiEbenen.png, id=128, 329.23pt x 273.02pt>
 File: figures/zweiEbenen.png Graphic file (type png)
 <use figures/zweiEbenen.png>
 Package pdftex.def Info: figures/zweiEbenen.png  used on input line 9.
@@ -1273,17 +1282,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--19
 
  []
 
-[9 <./figures/algoFormell.png>] [10 <./figures/zweiEbenen.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 25--77
+[9 <./figures/RGatter01.png>] [10 <./figures/algoFormell.png> <./figures/zweiEbenen.png>])
+Underfull \hbox (badness 10000) in paragraph at lines 25--79
 
  []
 
-(./variantenDerQuantensuche.tex
+(./variantenDerQuantensuche.tex [11]
 Underfull \hbox (badness 10000) in paragraph at lines 15--19
 
  []
 
-[11]
+
 Underfull \hbox (badness 10000) in paragraph at lines 22--26
 
  []
@@ -1293,44 +1302,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
 
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 118--124
+[12] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 122--128
 
  []
 
-[14]
-<figures/suche-minimum-visualisierung.png, id=178, 952.55875pt x 395.4775pt>
+<figures/suche-minimum-visualisierung.png, id=188, 952.55875pt x 395.4775pt>
 File: figures/suche-minimum-visualisierung.png Graphic file (type png)
 <use figures/suche-minimum-visualisierung.png>
-Package pdftex.def Info: figures/suche-minimum-visualisierung.png  used on input line 162.
+Package pdftex.def Info: figures/suche-minimum-visualisierung.png  used on input line 166.
 (pdftex.def)             Requested size: 358.5049pt x 148.84076pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 162--163
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 166--167
  [][] 
  []
 
-) [15 <./figures/suche-minimum-visualisierung.png>] (./anwendungenDesGroversAlgorithmus.tex) (./folgenFuerQuantencomputern.tex) [16]
+[15]) (./anwendungenDesGroversAlgorithmus.tex [16 <./figures/suche-minimum-visualisierung.png>]
+<figures/tsp.jpg, id=210, 1935.23pt x 1150.2975pt>
+File: figures/tsp.jpg Graphic file (type jpg)
+<use figures/tsp.jpg>
+Package pdftex.def Info: figures/tsp.jpg  used on input line 17.
+(pdftex.def)             Requested size: 250.95233pt x 149.15778pt.
+) (./fazit.tex) [17 <./figures/tsp.jpg>]
 No complaints by nag.
-[17] (./lni-paper-example-de.aux
-Package cleveref Info: loaded `ngerman' language definitions on input line 22.
+[18] (./lni-paper-example-de.aux
+Package cleveref Info: loaded `ngerman' language definitions on input line 24.
 )
 Package logreq Info: Writing requests to 'lni-paper-example-de.run.xml'.
 \openout1 = `lni-paper-example-de.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31027 strings out of 478268
- 543078 string characters out of 5846348
- 1413041 words of memory out of 5000000
- 48292 multiletter control sequences out of 15000+600000
- 578119 words of font info for 330 fonts, out of 8000000 for 9000
+ 31073 strings out of 478268
+ 543884 string characters out of 5846348
+ 1418121 words of memory out of 5000000
+ 48328 multiletter control sequences out of 15000+600000
+ 578349 words of font info for 333 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  85i,13n,131p,1103b,4039s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on lni-paper-example-de.pdf (17 pages, 611583 bytes).
+Output written on lni-paper-example-de.pdf (18 pages, 821526 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 202 compressed objects within 3 object streams
- 81 named destinations out of 1000 (max. 500000)
- 86084 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 289 PDF objects out of 1000 (max. 8388607)
+ 218 compressed objects within 3 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 86099 words of extra memory for PDF output out of 89155 (max. 10000000)
 

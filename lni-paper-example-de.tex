@@ -55,11 +55,11 @@
 \thispagestyle{fancy}
 
 \begin{abstract}
-Suchprobleme können von klassischen Computern nicht effizient gelöst werden. Bei einer Suche mit Quantencomputer und dem Grover Algorithmus wird eine quadratische Beschleunigung erreicht werden. Der Grover Algorithmus setzt diese Suche in unstrukturierten Daten perfekt um. Dabei wird in Schritten die Amplitude des gesuchten Elementes gesteigert und alle anderen Amplituden gesenkt. Der Algorithmus hat verschiedene Varianten, so kann nach mehreren oder unbekannt vielen Lösungen und dem Minimum gesucht werden. Die Laufzeit wird dabei nicht schlechter. Mithilfe des Grover Algorithmus lassen sich jedoch nach aktuellem Stand keine NP-vollständigen Probleme effizient lösen. Daher wird der Quantencomputer mithilfe des Algorithmus nicht zu einem Allheilmittel.
+Suchprobleme können von klassischen Computern nicht effizient gelöst werden. Bei einer Suche mit Quantencomputern und dem Grover Algorithmus kann eine quadratische Beschleunigung erreicht werden. Der Grover Algorithmus setzt diese Suche in unstrukturierten Daten perfekt um. Dabei wird in Schritten die Amplitude des gesuchten Elementes gesteigert und alle anderen Amplituden gesenkt. Der Algorithmus hat verschiedene Varianten, so kann nach mehreren oder unbekannt vielen Lösungen und dem Minimum gesucht werden. Die Laufzeit wird dabei nicht schlechter. Mithilfe des Grover Algorithmus lassen sich jedoch nach aktuellem Stand keine NP-vollständigen Probleme effizient lösen. Daher wird der Quantencomputer mithilfe des Algorithmus nicht zu einem Allheilmittel.
 \end{abstract}
 
 \begin{keywords}
-Quantencomputer \and Quantum Computing \and Grovers-Algorithmen
+Quantencomputer \and Quantum Computing \and Grovers-Algorithmus \and Suchalgorithmus
 \end{keywords}
 
 \section{Einleitung $\mathbf{\textsubscript{\small sc}}$}
@@ -67,9 +67,11 @@ Quantencomputer \and Quantum Computing \and Grovers-Algorithmen
 
 \section{Aufgabenstellung $\mathbf{\textsubscript{\small sc}}$}
 \input{aufgabenstellung}
+\label{sec:aufgabe}
 
 \section{Grovers-Algorithmus $\mathbf{\textsubscript{\small tp}}$}
 \input{groversAlgorithmen}
+\label{sec:groAL}
 
 \section{Bestimmung der Anzahl an Grover-Iterationen $\mathbf{\textsubscript{\small tp}}$}
 \input{geometrischeVeranschaulichung}
@@ -77,12 +79,15 @@ Quantencomputer \and Quantum Computing \and Grovers-Algorithmen
 
 \section{Varianten der Quantensuche $\mathbf{\textsubscript{\small sc}}$}
 \input{variantenDerQuantensuche}
+\label{sec:varQua}
 
 \section{Anwendungen des Grovers Algorithmus}
 \input{anwendungenDesGroversAlgorithmus}
+\label{sec:anwGro}
 
 \section{Fazit}
-\input{folgenFuerQuantencomputern}
+\input{fazit}
+\label{sec:fazit}
 
 \begin{comment}
 \section{Verwendung}
