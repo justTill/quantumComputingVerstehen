@@ -19,114 +19,166 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global}
-    \entry{Ho17}{book}{}
-      \name{author}{1}{}{%
-        {{hash=0860b3dad32163fccfed94a1f5680e3f}{%
-           family={Homeister},
-           familyi={H\bibinitperiod},
-           given={M.},
+    \entry{Boyer.1998}{article}{}
+      \name{author}{4}{}{%
+        {{hash=4b1f3a11730fbeb6283a8e6ae4e8516e}{%
+           family={Boyer},
+           familyi={B\bibinitperiod},
+           given={Michel},
            giveni={M\bibinitperiod}}}%
+        {{hash=504bb784f2241f359d5030d2ca7f2bdd}{%
+           family={Brassard},
+           familyi={B\bibinitperiod},
+           given={Gilles},
+           giveni={G\bibinitperiod}}}%
+        {{hash=a63f61d51d4a7a277cce46722c380f1a}{%
+           family={H{ø}yer},
+           familyi={H\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ffbcbc5eda6edf64a21ce3b8529b1ce0}{%
+           family={Tapp},
+           familyi={T\bibinitperiod},
+           given={Alain},
+           giveni={A\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Springer Vieweg Wiesbaden}%
-      }
-      \strng{namehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{fullhash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{bibnamehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{authorbibnamehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{authornamehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{authorfullhash}{0860b3dad32163fccfed94a1f5680e3f}
-      \field{extraname}{1}
-      \field{labelalpha}{Ho17}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \strng{namehash}{f04cad0e0e57c6975e0e44e5619736af}
+      \strng{fullhash}{2affd7613c5b7e3839fa55e11b7798bd}
+      \strng{bibnamehash}{2affd7613c5b7e3839fa55e11b7798bd}
+      \strng{authorbibnamehash}{2affd7613c5b7e3839fa55e11b7798bd}
+      \strng{authornamehash}{f04cad0e0e57c6975e0e44e5619736af}
+      \strng{authorfullhash}{2affd7613c5b7e3839fa55e11b7798bd}
+      \field{labelalpha}{Bo98}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Quantum Computing verstehen}
-      \field{year}{2017}
-      \field{pages}{137\bibrangedash 167}
-      \range{pages}{31}
+      \field{issn}{0015-8208}
+      \field{journaltitle}{Fortschritte der Physik}
+      \field{number}{4-5}
+      \field{title}{Tight Bounds on Quantum Searching}
+      \field{volume}{46}
+      \field{year}{1998}
+      \field{pages}{493\bibrangedash 505}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1002/(SICI)1521-3978(199806)46:4/5{\textless}493::AID-PROP493{\textgreater}3.0.CO;2-P
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/quant-ph/9605034%7D
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/quant-ph/9605034%7D
+      \endverb
+      \warn{\item Entry 'Boyer.1998' (lni-paper-example-de.bib): Invalid format '29.08.2022' of date field 'urldate' - ignoring}
     \endentry
-    \entry{Ho96}{book}{}
-      \name{author}{1}{}{%
-        {{hash=0860b3dad32163fccfed94a1f5680e3f}{%
-           family={Homeister},
+    \entry{Durr.1996}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=5f6e28c6f00ac66cc7aa0fcbab23ffdc}{%
+           family={Durr},
+           familyi={D\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+        {{hash=02d625961ae096ba47bc8e21a0c0f5b5}{%
+           family={Hoyer},
            familyi={H\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {Springer Vieweg Wiesbaden}%
-      }
-      \strng{namehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{fullhash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{bibnamehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{authorbibnamehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{authornamehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{authorfullhash}{0860b3dad32163fccfed94a1f5680e3f}
-      \field{extraname}{2}
-      \field{labelalpha}{Ho96}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \strng{namehash}{3d748f207efa47c5672f01e859ac6357}
+      \strng{fullhash}{3d748f207efa47c5672f01e859ac6357}
+      \strng{bibnamehash}{3d748f207efa47c5672f01e859ac6357}
+      \strng{authorbibnamehash}{3d748f207efa47c5672f01e859ac6357}
+      \strng{authornamehash}{3d748f207efa47c5672f01e859ac6357}
+      \strng{authorfullhash}{3d748f207efa47c5672f01e859ac6357}
+      \field{labelalpha}{DH96}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Quantum Computing verstehen}
+      \field{title}{A Quantum Algorithm for Finding the Minimum}
       \field{year}{1996}
-      \field{pages}{137\bibrangedash 167}
-      \range{pages}{31}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/quant-ph/9607014%7D
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/quant-ph/9607014%7D
+      \endverb
+      \warn{\item Entry 'Durr.1996' (lni-paper-example-de.bib): Invalid format '29.08.2022' of date field 'urldate' - ignoring}
     \endentry
-    \entry{Ho99}{book}{}
+    \entry{Homeister.2018}{book}{}
       \name{author}{1}{}{%
-        {{hash=0860b3dad32163fccfed94a1f5680e3f}{%
+        {{hash=d43406ca3615f85571c06b23547863d1}{%
            family={Homeister},
-           familyi={H\bibinitperiod},
-           given={M.},
-           giveni={M\bibinitperiod}}}%
+           familyi={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Wiesbaden}%
       }
       \list{publisher}{1}{%
-        {Springer Vieweg Wiesbaden}%
+        {Springer Fachmedien Wiesbaden}%
       }
-      \strng{namehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{fullhash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{bibnamehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{authorbibnamehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{authornamehash}{0860b3dad32163fccfed94a1f5680e3f}
-      \strng{authorfullhash}{0860b3dad32163fccfed94a1f5680e3f}
-      \field{extraname}{3}
-      \field{labelalpha}{Ho99}
+      \strng{namehash}{d43406ca3615f85571c06b23547863d1}
+      \strng{fullhash}{d43406ca3615f85571c06b23547863d1}
+      \strng{bibnamehash}{d43406ca3615f85571c06b23547863d1}
+      \strng{authorbibnamehash}{d43406ca3615f85571c06b23547863d1}
+      \strng{authornamehash}{d43406ca3615f85571c06b23547863d1}
+      \strng{authorfullhash}{d43406ca3615f85571c06b23547863d1}
+      \field{labelalpha}{Ho18}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{isbn}{978-3-658-22883-5}
       \field{title}{Quantum Computing verstehen}
-      \field{year}{1999}
-      \field{pages}{137\bibrangedash 167}
-      \range{pages}{31}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1007/978-3-658-22884-2
+      \endverb
+      \warn{\item Entry 'Homeister.2018' (lni-paper-example-de.bib): Invalid format '29.08.2022' of date field 'urldate' - ignoring}
     \endentry
-    \entry{KLM07}{book}{}
-      \name{author}{1}{}{%
-        {{hash=7464e0d6c589e585e506c4020f286af6}{%
-           family={KLM},
-           familyi={K\bibinitperiod}}}%
+    \entry{Kaye.2007}{book}{}
+      \name{author}{3}{}{%
+        {{hash=2e926b5dcc90007e1af34ef2f6bca110}{%
+           family={Kaye},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=02f0b673d956febd64f5d0fb94f0d170}{%
+           family={Laflamme},
+           familyi={L\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3484df707c54f9a0b20bb16c139edec5}{%
+           family={Mosca},
+           familyi={M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Springer Vieweg Wiesbaden}%
+        {OUP Oxford}%
       }
-      \strng{namehash}{7464e0d6c589e585e506c4020f286af6}
-      \strng{fullhash}{7464e0d6c589e585e506c4020f286af6}
-      \strng{bibnamehash}{7464e0d6c589e585e506c4020f286af6}
-      \strng{authorbibnamehash}{7464e0d6c589e585e506c4020f286af6}
-      \strng{authornamehash}{7464e0d6c589e585e506c4020f286af6}
-      \strng{authorfullhash}{7464e0d6c589e585e506c4020f286af6}
-      \field{labelalpha}{KL07}
+      \strng{namehash}{f6709801bca71e727f53acea94503a22}
+      \strng{fullhash}{a65c92bd36c7843de4f9c593c9567690}
+      \strng{bibnamehash}{a65c92bd36c7843de4f9c593c9567690}
+      \strng{authorbibnamehash}{a65c92bd36c7843de4f9c593c9567690}
+      \strng{authornamehash}{f6709801bca71e727f53acea94503a22}
+      \strng{authorfullhash}{a65c92bd36c7843de4f9c593c9567690}
+      \field{labelalpha}{KLM07}
       \field{sortinit}{K}
       \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{TO BE CHANGED}
+      \field{isbn}{9780198570004}
+      \field{title}{An Introduction to Quantum Computing}
       \field{year}{2007}
-      \field{pages}{3123\bibrangedash 321}
-      \range{pages}{199}
+      \verb{urlraw}
+      \verb http://mmrc.amss.cas.cn/tlb/201702/W020170224608149125645.pdf%7D
+      \endverb
+      \verb{url}
+      \verb http://mmrc.amss.cas.cn/tlb/201702/W020170224608149125645.pdf%7D
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

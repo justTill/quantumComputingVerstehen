@@ -84,7 +84,7 @@ Trotz der zufällig gewählten Anzahl von Iterationen beträgt die Laufzeit für
 Boyer, Brassard, Høyer und Tapp beschreiben eine weitere Modifizierung des Algorithmus, die es erlaubt, die Laufzeit auf $\mathbf{O(\frac{N}{k})}$ zu senken. 
 Dazu wird vor Beginn des Algorithmus ein $\mathbf{\pmb\lambda \in \{1, ..., \frac{4}{3} \} }$ gewählt und $\mathbf{m = 1}$ initialisiert. Die Anzahl der Iterationen $\mathbf{r}$ wird dann im 2. Schritt nicht mehr aus $\mathbf{\{1, ..., \sqrt{N}\}}$ gewählt, sondern aus $\mathbf{\{0, ..., m\}}$. 
 Wertet $\mathbf{f(x)}$ im 5. Schritt dann zu $\mathbf{0}$ aus, wird $\mathbf{m}$ mit dem Faktor $\mathbf{\pmb\lambda}$ multipliziert, sodass bei dem nächsten Durchlauf des Algorithmus im 2. Schritt $\mathbf{e}$ aus $\mathbf{\{0, ..., \pmb\lambda \times m\}}$  gewählt wird. 
-Im schlechtesten Fall wird so lange keine Lösung gefunden, dass $\mathbf{\pmb\lambda \times m > \sqrt{N}}$ gilt. Dann wird im 2. Schritt $\mathbf{r}$ wieder zufällig aus $\mathbf{\{0, ..., \sqrt{N}\}}$ gewählt, bis der Algorithmus terminiert \cite[S. 141]{Ho99}.
+Im schlechtesten Fall wird so lange keine Lösung gefunden, dass $\mathbf{\pmb\lambda \times m > \sqrt{N}}$ gilt. Dann wird im 2. Schritt $\mathbf{r}$ wieder zufällig aus $\mathbf{\{0, ..., \sqrt{N}\}}$ gewählt, bis der Algorithmus terminiert \cite{Boyer.1998}.
 
 
 \subsection{Suche nach dem Minimum} \label{minimum}
@@ -121,7 +121,7 @@ Der Algorithmus durchläuft die folgenden Schritte:
 		\end{equation}
 		\item \textbf{Näherung an das Minimum}
 		\\
-		Nach Dürr und Høyer werden die folgenden Schritte wiederholt, bis die Gesamtlaufzeit $\mathbf{22,5 \times \sqrt{N} + 1,4 \times \pmb\log\textsubscript{2}N^2}$ überschreitet \cite[S. 141]{Ho96}. 
+		Nach Dürr und Høyer werden die folgenden Schritte wiederholt, bis die Gesamtlaufzeit $\mathbf{22,5 \times \sqrt{N} + 1,4 \times \pmb\log\textsubscript{2}N^2}$ überschreitet \cite{Durr.1996}. 
 		Anschließend wird mit Schritt 2. c) fortgefahren:
 		\\
 		\begin{enumerate}

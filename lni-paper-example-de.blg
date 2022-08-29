@@ -1,15 +1,19 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [0] Config.pm:310> INFO - Logfile is 'lni-paper-example-de.blg'
-[84] biber-darwin:340> INFO - === Sun Aug 28, 2022, 14:16:19
-[103] Biber.pm:418> INFO - Reading 'lni-paper-example-de.bcf'
-[213] Biber.pm:972> INFO - Found 4 citekeys in bib section 0
-[229] Biber.pm:4383> INFO - Processing section 0
-[241] Biber.pm:4574> INFO - Looking for bibtex file 'lni-paper-example-de.bib' for section 0
-[242] bibtex.pm:1713> INFO - LaTeX decoding ...
-[256] bibtex.pm:1518> INFO - Found BibTeX data source 'lni-paper-example-de.bib'
-[304] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[304] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[304] Biber.pm:4203> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
-[304] Biber.pm:4209> INFO - No sort tailoring available for locale 'de-DE'
-[307] bbl.pm:654> INFO - Writing 'lni-paper-example-de.bbl' with encoding 'UTF-8'
-[309] bbl.pm:757> INFO - Output to lni-paper-example-de.bbl
+[78] biber-darwin:340> INFO - === Mon Aug 29, 2022, 18:21:19
+[94] Biber.pm:418> INFO - Reading 'lni-paper-example-de.bcf'
+[202] Biber.pm:972> INFO - Found 4 citekeys in bib section 0
+[217] Biber.pm:4383> INFO - Processing section 0
+[228] Biber.pm:4574> INFO - Looking for bibtex file 'lni-paper-example-de.bib' for section 0
+[229] bibtex.pm:1713> INFO - LaTeX decoding ...
+[245] bibtex.pm:1518> INFO - Found BibTeX data source 'lni-paper-example-de.bib'
+[320] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[320] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[320] Biber.pm:4203> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[320] Biber.pm:4209> INFO - No sort tailoring available for locale 'de-DE'
+[329] bbl.pm:654> INFO - Writing 'lni-paper-example-de.bbl' with encoding 'UTF-8'
+[331] bbl.pm:757> INFO - Output to lni-paper-example-de.bbl
+[332] Biber.pm:130> WARN - Entry 'Homeister.2018' (lni-paper-example-de.bib): Invalid format '29.08.2022' of date field 'urldate' - ignoring
+[332] Biber.pm:130> WARN - Entry 'Boyer.1998' (lni-paper-example-de.bib): Invalid format '29.08.2022' of date field 'urldate' - ignoring
+[332] Biber.pm:130> WARN - Entry 'Durr.1996' (lni-paper-example-de.bib): Invalid format '29.08.2022' of date field 'urldate' - ignoring
+[332] Biber.pm:132> INFO - WARNINGS: 3
